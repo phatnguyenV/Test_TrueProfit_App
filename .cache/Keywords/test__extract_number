@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "05B9A924127FA72858F2BA68351C0005",
+  "keywordClasses": [
+    {
+      "name": "test.extract_number",
+      "keywordMethods": [
+        {
+          "name": "extractNumber",
+          "parameters": [
+            {
+              "name": "input",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
