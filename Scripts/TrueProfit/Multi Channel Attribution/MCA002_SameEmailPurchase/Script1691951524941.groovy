@@ -36,7 +36,25 @@ def AdPinterest = [('antique_drawers_5111') : '?tp_source=pinterest&tp_adid=5111
 
 WebUI.navigateToUrl(store_url)
 
+DriverFactory.getWebDriver().manage().deleteAllCookies()
+
+WebUI.refresh()
+
 WebUI.waitForPageLoad(5)
+
+//Insert password to store front if required
+while (WebUI.waitForElementPresent(input_password, 1, FailureHandling.OPTIONAL)) {
+	try {
+		WebUI.setEncryptedText(input_password, GlobalVariable.default_password)
+
+		WebUI.click(btn_enter)
+
+		break
+	}
+	catch (Exception e) {
+		println(e)
+	}
+}
 
 WebUI.waitForElementVisible(main_content, 5)
 
@@ -133,6 +151,3 @@ WebUI.switchToDefaultContent()
 WebUI.click(btn_continue)
 
 WebUI.waitForElementPresent(span_continue_shopping, 10)
-
-WebUI.delay(1)
-

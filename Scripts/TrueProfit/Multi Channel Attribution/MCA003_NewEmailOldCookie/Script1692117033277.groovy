@@ -24,28 +24,23 @@ def AdFacebook = [('antique_drawers_1111') : '?tp_source=facebook&tp_adid=1111&t
 
 def AdGoogle = [('antique_drawers_2111') : '?tp_source=google&tp_adid=2111&tp_productid=8326381666626', ('antique_drawers_2112') : '?tp_source=google&tp_adid=2112&tp_productid=8326381666626']
 
-def AdTiktok = [('antique_drawers_3111') : '?tp_source=tiktok&tp_adid=3111&tp_productid=8326381666626', ('antique_drawers_3112') : '?tp_source=tiktok&tp_adid=3112&tp_productid=8326381666626',
-	('brown_throw_pillows_3111') : '?tp_source=tiktok&tp_adid=3111&tp_productid=8326381928770']
+def AdTiktok = [('antique_drawers_3111') : '?tp_source=tiktok&tp_adid=3111&tp_productid=8326381666626', ('antique_drawers_3112') : '?tp_source=tiktok&tp_adid=3112&tp_productid=8326381666626'
+    , ('brown_throw_pillows_3111') : '?tp_source=tiktok&tp_adid=3111&tp_productid=8326381928770']
 
 def AdSnapchat = [('antique_drawers_4111') : '?tp_source=snapchat&tp_adid=4111&tp_productid=8326381666626', ('antique_drawers_4112') : '?tp_source=snapchat&tp_adid=4112&tp_productid=8326381666626'
-    , ('antique_drawers_41122') : '?tp_source=snapchat&tp_adid=41122&tp_productid=8326381666626', ('antique_drawers_4113') : '?tp_source=snapchat&tp_adid=4113&tp_productid=8326381666626',
-	('copper_light_4111') : '?tp_source=snapchat&tp_adid=4111&tp_productid=8326381535554']
+    , ('antique_drawers_41122') : '?tp_source=snapchat&tp_adid=41122&tp_productid=8326381666626', ('antique_drawers_4113') : '?tp_source=snapchat&tp_adid=4113&tp_productid=8326381666626'
+    , ('copper_light_4111') : '?tp_source=snapchat&tp_adid=4111&tp_productid=8326381535554']
 
-def AdPinterest = [('antique_drawers_5111') : '?tp_source=pinterest&tp_adid=5111&tp_productid=8326381666626', ('antique_drawers_5112') : '?tp_source=pinterest&tp_adid=5112&tp_productid=8326381666626',
-	('cream_sofa_5111') : '?tp_source=pinterest&tp_adid=5111&tp_productid=8326381601090']
+def AdPinterest = [('antique_drawers_5111') : '?tp_source=pinterest&tp_adid=5111&tp_productid=8326381666626', ('antique_drawers_5112') : '?tp_source=pinterest&tp_adid=5112&tp_productid=8326381666626'
+    , ('cream_sofa_5111') : '?tp_source=pinterest&tp_adid=5111&tp_productid=8326381601090',('black_bean_5111') : '?tp_source=pinterest&tp_adid=5111&tp_productid=8326382715202']
 
-def AdBing = [('gardening_hand_trowel_6112') : '?tp_source=bing&tp_adid=6112&tp_productid=8326382092610',('gardening_hand_trowel_6113') : '?tp_source=bing&tp_adid=6113&tp_productid=8326382092610']
+def AdBing = [('gardening_hand_trowel_6112') : '?tp_source=bing&tp_adid=6112&tp_productid=8326382092610', ('gardening_hand_trowel_6113') : '?tp_source=bing&tp_adid=6113&tp_productid=8326382092610']
 
 WebUI.navigateToUrl(store_url)
 
-DriverFactory.getWebDriver().manage().deleteAllCookies()
-
-WebUI.refresh()
-
 WebUI.waitForPageLoad(5)
 
-//Insert password to store front if required
-while (WebUI.verifyElementPresent(input_password, 3, FailureHandling.OPTIONAL)) {
+while (WebUI.waitForElementPresent(input_password, 1, FailureHandling.OPTIONAL)) {
     try {
         WebUI.setEncryptedText(input_password, GlobalVariable.default_password)
 
@@ -60,7 +55,7 @@ while (WebUI.verifyElementPresent(input_password, 3, FailureHandling.OPTIONAL)) 
 
 WebUI.waitForElementVisible(main_content, 5)
 
-WebUI.navigateToUrl((store_url + 'products/antique-drawers') + AdFacebook.antique_drawers_1111)
+WebUI.navigateToUrl((store_url + 'products/antique-drawers') + AdSnapchat.antique_drawers_4111)
 
 WebUI.waitForElementPresent(add_to_cart, 3)
 
@@ -68,17 +63,21 @@ WebUI.click(plus_quantity)
 
 WebUI.click(add_to_cart)
 
-WebUI.navigateToUrl((store_url + 'products/black-bean-bag') + AdFacebook.black_bean_1111)
+WebUI.navigateToUrl((store_url + 'products/gardening-hand-trowel') + AdBing.gardening_hand_trowel_6112)
+
+WebUI.waitForElementPresent(add_to_cart, 3)
+
+WebUI.click(plus_quantity)
+
+WebUI.click(add_to_cart)
+
+WebUI.navigateToUrl((store_url + 'products/black-bean-bag') + AdPinterest.black_bean_5111)
 
 WebUI.refresh()
-
-WebUI.delay(1)
 
 WebUI.waitForElementPresent(add_to_cart, 3)
 
 WebUI.click(add_to_cart)
-
-WebUI.waitForElementPresent(view_cart, 3)
 
 WebUI.click(view_cart)
 
@@ -87,24 +86,19 @@ WebUI.waitForElementPresent(checkout_in_cart, 3)
 WebUI.click(checkout_in_cart)
 
 //WebUI.waitForElementPresent(btn_buy_it_now, 5)
-
 //WebUI.click(btn_buy_it_now)
-
-WebUI.waitForElementVisible(email, 3)
-
-WebUI.executeJavaScript('window.open();', [])
+WebUI.verifyElementPresent(email, 3)
 
 currentWindow = WebUI.getWindowIndex()
 
+WebUI.executeJavaScript('window.open("https://10minutemail.net/");', [])
+
 WebUI.switchToWindowIndex(currentWindow + 1)
-
-WebUI.navigateToUrl('https://10minutemail.net/')
-
-WebUI.waitForElementPresent(get_another_email, 5)
+//
+//WebUI.navigateToUrl('https://10minutemail.net/')
 
 def email_10m = ''
 
-//Clear cookie to get a new email from the domain above
 while (true) {
     try {
         DriverFactory.getWebDriver().manage().deleteAllCookies()
@@ -121,11 +115,10 @@ while (true) {
         println(e)
     } 
 }
-//Save email in excel file to reuse
-email_10m = WebUI.getAttribute(temp_email, 'value')
-CustomKeywords.'test.WriteExcel.savetoExcel'(email_10m)
 
-WebUI.comment(email_10m)
+email_10m = WebUI.getAttribute(temp_email, 'value')
+
+CustomKeywords.'test.WriteExcel.saveEmailToExcel'(email_10m)
 
 WebUI.closeWindowIndex(currentWindow + 1)
 
@@ -155,23 +148,22 @@ WebUI.waitForElementPresent(first_address_suggestion, 5)
 WebUI.click(first_address_suggestion)
 
 //WebUI.click(btn_close_suggestion)
-//Click Continue to shipping
+// click Continue to shipping
 WebUI.scrollToPosition(0, 400)
 
 WebUI.click(btn_continue)
 
-//Click Continue to payment
+// click Continue to payment
 WebUI.waitForElementPresent(btn_continue, 2)
 
 WebUI.click(btn_continue)
 
-//Click Continue to payment
-WebUI.waitForElementPresent(iframe_card_number, 2)
+// click Continue to payment
+//WebUI.waitForElementPresent(iframe_card_number, 2)
 WebUI.switchToFrame(iframe_card_number, 2)
 
 WebUI.scrollToElement(card_number, 2)
 
-//Insert payment info to input iframes
 WebUI.sendKeys(card_number, '1')
 
 WebUI.switchToDefaultContent()
@@ -200,4 +192,3 @@ WebUI.click(btn_continue)
 
 WebUI.waitForElementPresent(span_continue_shopping, 10)
 
-WebUI.delay(1)

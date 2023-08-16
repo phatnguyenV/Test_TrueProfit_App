@@ -43,11 +43,9 @@ DriverFactory.getWebDriver().manage().deleteAllCookies()
 
 WebUI.refresh()
 
-WebUI.refresh()
-
 WebUI.waitForPageLoad(5)
 
-while (WebUI.verifyElementPresent(input_password, 3, FailureHandling.OPTIONAL)) {
+while (WebUI.waitForElementPresent(input_password, 1, FailureHandling.OPTIONAL)) {
     try {
         WebUI.setEncryptedText(input_password, GlobalVariable.default_password)
 
@@ -120,15 +118,14 @@ WebUI.click(checkout_in_cart)
 //WebUI.click(btn_buy_it_now)
 WebUI.verifyElementPresent(email, 3)
 
-WebUI.executeJavaScript('window.open();', [])
-
 currentWindow = WebUI.getWindowIndex()
 
+WebUI.executeJavaScript('window.open("https://10minutemail.net/");', [])
+
 WebUI.switchToWindowIndex(currentWindow + 1)
+//
+//WebUI.navigateToUrl('https://10minutemail.net/')
 
-WebUI.navigateToUrl('https://10minutemail.net/')
-
-WebUI.waitForElementPresent(get_another_email, 5)
 
 def email_10m = ''
 
@@ -151,7 +148,7 @@ while (true) {
 
 email_10m = WebUI.getAttribute(temp_email, 'value')
 
-CustomKeywords.'test.WriteExcel.savetoExcel'(email_10m)
+CustomKeywords.'test.WriteExcel.saveEmailToExcel'(email_10m)
 
 WebUI.comment(email_10m)
 
@@ -227,5 +224,3 @@ WebUI.switchToDefaultContent()
 WebUI.click(btn_continue)
 
 WebUI.waitForElementPresent(span_continue_shopping, 10)
-
-WebUI.delay(1)

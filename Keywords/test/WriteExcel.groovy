@@ -31,7 +31,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class WriteExcel {
 	@Keyword
-	public void savetoExcel(String name) throws IOException{
+	public void saveEmailToExcel(String name) throws IOException{
 		String fileName = "TestData/temp_email_mca.xlsx";
 		File excelFile = new File(fileName);
 		XSSFWorkbook workbook;

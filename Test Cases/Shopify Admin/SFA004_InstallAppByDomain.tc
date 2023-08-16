@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFA004_InstallAppByDomain</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6cefd360-6bb3-4ce8-bf77-bf3d2d9f13b8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f4a6cfa9-a2f3-48ce-8991-88a38d5f89f9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>86d19b0e-59aa-426a-b048-a82631aac01d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>326cf9cf-2520-4895-bfc2-a9eac2167ea2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c7f453f5-f776-46f2-8b6a-0155be1eea83</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>04b35f00-3177-4ae2-b13a-388757bc25bd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>14f88c4b-a185-4ea7-8ba8-1a1ea64d699d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>698018c5-bb88-4649-9f5a-13924d05aaee</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>398400ce-93bf-4af6-ac7a-3197ec5c0b25</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5b65b437-fee3-43f3-92de-850bae1f9ee6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/InstallApp/btn_install')</defaultValue>
+      <description></description>
+      <id>f4a6cfa9-a2f3-48ce-8991-88a38d5f89f9</id>
+      <masked>false</masked>
+      <name>btn_install</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/InstallApp/txt_domain')</defaultValue>
+      <description></description>
+      <id>86d19b0e-59aa-426a-b048-a82631aac01d</id>
+      <masked>false</masked>
+      <name>txt_domain</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/InstallApp/btn_login_with_shopify')</defaultValue>
+      <description></description>
+      <id>326cf9cf-2520-4895-bfc2-a9eac2167ea2</id>
+      <masked>false</masked>
+      <name>btn_login_with_shopify</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/InstallApp/btn_signin')</defaultValue>
+      <description></description>
+      <id>c7f453f5-f776-46f2-8b6a-0155be1eea83</id>
+      <masked>false</masked>
+      <name>btn_signin</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/InstallApp/btn_get_started')</defaultValue>
+      <description></description>
+      <id>04b35f00-3177-4ae2-b13a-388757bc25bd</id>
+      <masked>false</masked>
+      <name>btn_get_started</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/CreateStore/a_select_1st_account')</defaultValue>
+      <description></description>
+      <id>14f88c4b-a185-4ea7-8ba8-1a1ea64d699d</id>
+      <masked>false</masked>
+      <name>a_select_1st_account</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>698018c5-bb88-4649-9f5a-13924d05aaee</id>
+      <masked>false</masked>
+      <name>domain</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/InstallApp/div_shop_not_found')</defaultValue>
+      <description></description>
+      <id>398400ce-93bf-4af6-ac7a-3197ec5c0b25</id>
+      <masked>false</masked>
+      <name>shop_not_found</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/LoginShopify/txt_email')</defaultValue>
+      <description></description>
+      <id>5b65b437-fee3-43f3-92de-850bae1f9ee6</id>
+      <masked>false</masked>
+      <name>txt_email</name>
+   </variable>
+</TestCaseEntity>
