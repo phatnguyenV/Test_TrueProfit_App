@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SFA002_CreateStore</name>
+   <name>SFA002_1_CreateStoreByGlobalDomain</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>7999ae1b-8062-4fbc-9f46-622a320d2919</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>88725b8d-f32f-4e17-ad37-98e5a39d85fa</variableId>
-   </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
@@ -27,19 +21,7 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>5822e614-6d5b-4c62-b971-547d6a0ea72e</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>b44bf12f-e1ff-4b80-aaab-73bbaca755b2</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>91e80cf4-db16-4786-a960-edd629b168c4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -53,13 +35,12 @@
       <value></value>
       <variableId>ded4699b-0738-4bbd-ba40-62c36e5e8dcb</variableId>
    </variableLinks>
-   <variable>
-      <defaultValue>'https://partners.shopify.com/832504/stores/new?store_type=test_store&amp;data_type=static_data'</defaultValue>
-      <description></description>
-      <id>88725b8d-f32f-4e17-ad37-98e5a39d85fa</id>
-      <masked>false</masked>
-      <name>url</name>
-   </variable>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>91e80cf4-db16-4786-a960-edd629b168c4</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/CreateStore/btn_create_store')</defaultValue>
       <description></description>
@@ -75,25 +56,11 @@
       <name>txt_store_name</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Shopify Admin/CreateStore/a_select_1st_account')</defaultValue>
-      <description></description>
-      <id>5822e614-6d5b-4c62-b971-547d6a0ea72e</id>
-      <masked>false</masked>
-      <name>a_select_1st_account</name>
-   </variable>
-   <variable>
       <defaultValue>findTestObject('Shopify Admin/CreateStore/div_dashboard')</defaultValue>
       <description></description>
       <id>b44bf12f-e1ff-4b80-aaab-73bbaca755b2</id>
       <masked>false</masked>
       <name>div_dashboard</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>91e80cf4-db16-4786-a960-edd629b168c4</id>
-      <masked>false</masked>
-      <name>domain</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/CreateStore/txt_error')</defaultValue>
@@ -108,5 +75,12 @@
       <id>ded4699b-0738-4bbd-ba40-62c36e5e8dcb</id>
       <masked>false</masked>
       <name>span_store_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>91e80cf4-db16-4786-a960-edd629b168c4</id>
+      <masked>false</masked>
+      <name>domain</name>
    </variable>
 </TestCaseEntity>

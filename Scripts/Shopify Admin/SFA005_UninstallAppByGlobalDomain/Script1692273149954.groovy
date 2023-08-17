@@ -17,14 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def shopDomain = 'new-new-new-store-0'
+def storeDomain = GlobalVariable.store_domain
 
-def adminDomainName = (GlobalVariable.protocal + shopDomain) + GlobalVariable.SPF_admin_domain_name
+def storeAdmin = (GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name
 
-WebUI.navigateToUrl(adminDomainName)
+WebUI.navigateToUrl(storeAdmin)
 
 //Login to Shopify admin if it is required
-while (WebUI.waitForElementPresent(txt_email, 1, FailureHandling.OPTIONAL)) {
+while (WebUI.waitForElementPresent(GlobalVariable.txt_email, 1, FailureHandling.OPTIONAL)) {
     try {
         WebUI.callTestCase(findTestCase('Shopify Admin/SFA001_LoginShopify'), [('url') : 'https://accounts.shopify.com/lookup?rid=d50c60a2-1d7c-469c-a15f-39bc5d99f8bf'
                 , ('h2_yourstore') : findTestObject('Shopify Admin/LoginShopify/h2_yourstore'), ('username') : 'phatnt@firegroup.io'
@@ -33,7 +33,7 @@ while (WebUI.waitForElementPresent(txt_email, 1, FailureHandling.OPTIONAL)) {
                     'Shopify Admin/LoginShopify/txt_email'), ('txt_password') : findTestObject('Shopify Admin/LoginShopify/txt_password')
                 , ('a_remind_later') : findTestObject('Shopify Admin/LoginShopify/a_remind_later')], FailureHandling.STOP_ON_FAILURE)
 
-        WebUI.navigateToUrl(adminDomainName)
+        WebUI.navigateToUrl(storeAdmin)
 
         break
     }
@@ -43,11 +43,9 @@ while (WebUI.waitForElementPresent(txt_email, 1, FailureHandling.OPTIONAL)) {
 }
 
 //Select the first account on Shopify
-if (WebUI.waitForElementPresent(a_select_1st_account, 1, FailureHandling.OPTIONAL)) {
-    WebUI.click(a_select_1st_account)
+if (WebUI.waitForElementPresent(GlobalVariable.a_select_1st_account, 1, FailureHandling.OPTIONAL)) {
+    WebUI.click(GlobalVariable.a_select_1st_account)
 }
-
-WebUI.refresh()
 
 WebUI.waitForElementPresent(span_settings, 3)
 
@@ -57,10 +55,9 @@ WebUI.waitForElementPresent(span_apps_and_sales, 3)
 
 WebUI.click(span_apps_and_sales)
 
-if (WebUI.verifyElementPresent(span_option_tp_non_prod, 3, FailureHandling.OPTIONAL)) {
-    WebUI.waitForElementPresent(span_option_tp_non_prod, 3)
+if (WebUI.verifyElementPresent(GlobalVariable.btn_option_tp, 1, FailureHandling.OPTIONAL)) {
 
-    WebUI.click(span_option_tp_non_prod)
+    WebUI.click(GlobalVariable.btn_option_tp)
 
     WebUI.waitForElementPresent(btn_uninstall_dropdown, 3)
 

@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import java.util.ResourceBundle.Control as Control
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -27,24 +28,16 @@ import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import org.openqa.selenium.Capabilities as Capabilities
 import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
 
-def shopDomain = 'new-new-new-store-0'
+def partner_nonprod = GlobalVariable.partner_nonprod
 
-def full_link = (GlobalVariable.protocal + GlobalVariable.test_subdomain) + GlobalVariable.domain_name
+def dev_store_creation = GlobalVariable.dev_store_creation
 
-WebUI.navigateToUrl(full_link)
+def storeDomain = GlobalVariable.store_domain
 
-WebUI.waitForElementVisible(btn_login_with_shopify, 10)
+WebUI.navigateToUrl(dev_store_creation)
 
-WebUI.click(btn_login_with_shopify)
-
-WebUI.waitForElementVisible(txt_domain, 10)
-
-WebUI.sendKeys(txt_domain, shopDomain)
-
-WebUI.click(btn_signin)
-
-//Login to Shopify admin if it is required
-while (WebUI.verifyElementPresent(txt_email, 1, FailureHandling.OPTIONAL)) {
+// Login to Shopify admin if it is required
+while (WebUI.verifyElementPresent(GlobalVariable.txt_email, 1, FailureHandling.OPTIONAL)) {
     try {
         WebUI.callTestCase(findTestCase('Shopify Admin/SFA001_LoginShopify'), [('url') : 'https://accounts.shopify.com/lookup?rid=d50c60a2-1d7c-469c-a15f-39bc5d99f8bf'
                 , ('h2_yourstore') : findTestObject('Shopify Admin/LoginShopify/h2_yourstore'), ('username') : 'phatnt@firegroup.io'
@@ -53,17 +46,7 @@ while (WebUI.verifyElementPresent(txt_email, 1, FailureHandling.OPTIONAL)) {
                     'Shopify Admin/LoginShopify/txt_email'), ('txt_password') : findTestObject('Shopify Admin/LoginShopify/txt_password')
                 , ('a_remind_later') : findTestObject('Shopify Admin/LoginShopify/a_remind_later')], FailureHandling.STOP_ON_FAILURE)
 
-        WebUI.navigateToUrl(full_link)
-
-        WebUI.waitForElementVisible(btn_login_with_shopify, 10)
-
-        WebUI.click(btn_login_with_shopify)
-
-        WebUI.waitForElementVisible(txt_domain, 10)
-
-        WebUI.sendKeys(txt_domain, shopDomain)
-
-        WebUI.click(btn_signin)
+        WebUI.navigateToUrl(dev_store_creation)
 
         break
     }
@@ -72,24 +55,50 @@ while (WebUI.verifyElementPresent(txt_email, 1, FailureHandling.OPTIONAL)) {
     } 
 }
 
-//Select the first account on Shopify
-if (WebUI.verifyElementPresent(a_select_1st_account, 1, FailureHandling.OPTIONAL)) {
-    WebUI.click(a_select_1st_account)
+// Select the first account on Shopify if required
+if (WebUI.verifyElementPresent(GlobalVariable.a_select_1st_account, 1, FailureHandling.OPTIONAL)) {
+    WebUI.click(GlobalVariable.a_select_1st_account)
 }
 
-//Check the store is available, execute to install True Profit
-if (!(WebUI.verifyElementPresent(shop_not_found, 3, FailureHandling.OPTIONAL))) {
-    WebUI.waitForElementVisible(btn_install, 15)
+WebUI.waitForElementVisible(txt_store_name, 5)
 
-    WebUI.click(btn_install)
+WebUI.scrollToPosition(0, 350)
 
-    WebUI.waitForPageLoad(15)
+WebUI.sendKeys(txt_store_name, storeDomain)
 
-    WebUI.waitForElementPresent(btn_get_started, 15)
+def number = CustomKeywords.'test.ExtractNumber.extractNumber'(storeDomain)
 
-    WebUI.delay(3)
+// If store domain is available, extract the number and increase it in the string
+// Then try the new one until error-free
+while (true) {
+    def newInput = CustomKeywords.'test.ReplaceNumber.replaceNumber'(storeDomain, number)
 
-    WebUI.takeFullPageScreenshot('screenshot/install_success.png')
-} else {
-    println('This shop is currently unavailable.')
+    try {
+        number++
+
+        WebUI.sendKeys(txt_store_name, Keys.chord(Keys.CONTROL, 'a', Keys.BACK_SPACE) + newInput)
+
+        WebUI.click(span_store_name)
+
+        if (!(WebUI.verifyElementPresent(txt_error, 3, FailureHandling.OPTIONAL))) {
+            // Transfer the store domain for the next test case of Test Suite
+            // In Katalon, this will be reversed to the orginal value as the global variable in Profies
+            GlobalVariable.storeDomain = newInput
+			CustomKeywords.'test.WriteExcel.saveDomainToExcel'(newInput)
+            break
+        }
+    }
+    catch (Exception e) {
+        println(e)
+    } 
 }
+
+WebUI.scrollToElement(btn_create, 5)
+
+WebUI.waitForElementVisible(btn_create, 5)
+
+WebUI.click(btn_create)
+
+WebUI.waitForElementPresent(div_dashboard, 90)
+
+WebUI.takeFullPageScreenshot('screenshot/create_store_success.png')

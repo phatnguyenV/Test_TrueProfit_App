@@ -35,12 +35,6 @@
       <value></value>
       <variableId>58c48cff-5434-4cba-a280-bfafd3529ab9</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>6ddf4c2e-e7fd-47df-b49f-a65200e59986</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>[('email_2') : 'phatnt@firegroup.io', ('email_1') : 'demo_pa2@gmail.com']</defaultValue>
       <description></description>
@@ -75,12 +69,5 @@
       <id>58c48cff-5434-4cba-a280-bfafd3529ab9</id>
       <masked>false</masked>
       <name>input_password</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('TrueProfit/main_trueprofit')</defaultValue>
-      <description></description>
-      <id>6ddf4c2e-e7fd-47df-b49f-a65200e59986</id>
-      <masked>false</masked>
-      <name>main_trueprofit</name>
    </variable>
 </TestCaseEntity>

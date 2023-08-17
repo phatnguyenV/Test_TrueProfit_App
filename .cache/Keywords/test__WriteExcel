@@ -1,11 +1,11 @@
 {
-  "keywordFileContentHash": "D9756B9EA2AFAAA311EF9CFD190DE8EB",
+  "keywordFileContentHash": "A1DED6D980792CEB052D606D52EC9160",
   "keywordClasses": [
     {
       "name": "test.WriteExcel",
       "keywordMethods": [
         {
-          "name": "savetoExcel",
+          "name": "saveEmailToExcel",
           "parameters": [
             {
               "name": "name",
@@ -20,11 +20,28 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
+        },
+        {
+          "name": "saveDomainToExcel",
+          "parameters": [
+            {
+              "name": "name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

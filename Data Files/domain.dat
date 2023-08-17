@@ -7,7 +7,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>3733d500-6d75-4320-8939-7af3c150561d</dataFileGUID>
-   <dataSourceUrl>C:\Users\FireGroup\Katalon Studio\Lession_2\domain.csv</dataSourceUrl>
+   <dataSourceUrl>C:\Users\FireGroup\Desktop\Test_TrueProfit_App\domain.csv</dataSourceUrl>
    <driver>CSV</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

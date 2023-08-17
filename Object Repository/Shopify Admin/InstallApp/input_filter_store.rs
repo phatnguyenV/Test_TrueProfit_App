@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_email</name>
+   <name>input_filter_store</name>
    <tag></tag>
-   <elementGuidId>f163102f-1355-4b41-8bf0-e8715e9ff900</elementGuidId>
+   <elementGuidId>ccb79e56-1020-416b-a17b-630a595dba79</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@type=&quot;email&quot;]</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;Polaris-TextField&quot;]/child::input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

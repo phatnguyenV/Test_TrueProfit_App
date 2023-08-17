@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>main_trueprofit</name>
+   <name>p_install_app</name>
    <tag></tag>
-   <elementGuidId>1d4306bf-c798-4dea-a614-73f7ae6d95f3</elementGuidId>
+   <elementGuidId>10e9d9c4-c5a8-4c1f-827a-fbd4a0e34142</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//main[@id=&quot;member-layout-main&quot;]</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//ul[@class=&quot;Polaris-ResourceList&quot;]/li[1]/descendant::p[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

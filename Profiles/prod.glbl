@@ -11,18 +11,13 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'phatnt-newstore-34'</initValue>
-      <name>domain</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>''</initValue>
-      <name>new_input</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'4aUHZLRHJF4='</initValue>
       <name>default_password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'phatnt-newstore-34'</initValue>
+      <name>store_domain</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -43,5 +38,70 @@
       <description></description>
       <initValue>'.myshopify.com/admin'</initValue>
       <name>SPF_admin_domain_name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://partners.shopify.com/832504/apps/6756135/test'</initValue>
+      <name>partner_nonprod</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://partners.shopify.com/832504/stores/new?store_type=test_store'</initValue>
+      <name>dev_store_creation</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'phatnt@firegroup.io'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0BXcTMSMNdRd23Ml/vw4nA=='</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('Shopify Admin/LoginShopify/txt_email')</initValue>
+      <name>txt_email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('Shopify Admin/LoginShopify/txt_password')</initValue>
+      <name>txt_password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('Shopify Admin/LoginShopify/btn_continue_with_email')</initValue>
+      <name>btn_continue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('Shopify Admin/LoginShopify/btn_login')</initValue>
+      <name>btn_login</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('Shopify Admin/LoginShopify/div_captcha')</initValue>
+      <name>captcha</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('Shopify Admin/LoginShopify/a_remind_later')</initValue>
+      <name>a_remind_later</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('Shopify Admin/CreateStore/a_select_1st_account')</initValue>
+      <name>a_select_1st_account</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('TrueProfit/General/main_trueprofit')</initValue>
+      <name>main_trueprofit</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('Shopify Admin/UninstallApp/btn_option_tp_prod')</initValue>
+      <name>btn_option_tp</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

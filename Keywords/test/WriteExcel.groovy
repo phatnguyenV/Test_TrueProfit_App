@@ -58,5 +58,34 @@ public class WriteExcel {
 		workbook.write(fos);
 		fos.close();
 	}
+	
+	@Keyword
+	public void saveDomainToExcel(String name) throws IOException{
+		String fileName = "TestData/created_store_domain.xlsx";
+		File excelFile = new File(fileName);
+		XSSFWorkbook workbook;
+
+		if (!excelFile.exists()) {
+			workbook = new XSSFWorkbook();
+			XSSFSheet sheet = workbook.createSheet("Sheet1");
+			Row headerRow = sheet.createRow(0);
+			Cell headerCell = headerRow.createCell(0);
+			headerCell.setCellValue("Domain");
+		} else {
+			FileInputStream fis = new FileInputStream(excelFile);
+			workbook = new XSSFWorkbook(fis);
+		}
+
+		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		int rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
+		//	  Row row = sheet.createRow(rowCount+1);
+		Row row = sheet.createRow(rowCount+1);
+		Cell cell = row.createCell(0);
+		cell.setCellType(cell.CELL_TYPE_STRING);
+		cell.setCellValue(name);
+		FileOutputStream fos = new FileOutputStream("TestData/created_store_domain.xlsx");
+		workbook.write(fos);
+		fos.close();
+	}
 }
 

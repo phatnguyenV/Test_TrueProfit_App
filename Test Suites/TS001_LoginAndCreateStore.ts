@@ -21,24 +21,6 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b7fb9466-45cf-4f05-8b84-f8c359033aa6</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>c539f03d-4a2d-4edf-b3a4-0ded1626fcff</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5e0475aa-a0ab-4531-9dc0-31a2e27ac6c9</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
          <variableId>165217ca-b865-4030-a94e-88b198295cd0</variableId>
       </variableLink>
       <variableLink>
@@ -81,12 +63,6 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>7309ce83-2c9e-48d6-a0f6-33efd59cec91</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
          <variableId>5822e614-6d5b-4c62-b971-547d6a0ea72e</variableId>
       </variableLink>
    </testCaseLink>
@@ -94,14 +70,8 @@
       <guid>e4c3b77e-cdc2-4954-92d1-c352bf28b4f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Shopify Admin/SFA002_CreateStore</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/SFA002_1_CreateStoreByGlobalDomain</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>88725b8d-f32f-4e17-ad37-98e5a39d85fa</variableId>
-      </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -113,12 +83,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>551bc31a-a93f-4dc6-8c3b-de6352b1b4a2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5822e614-6d5b-4c62-b971-547d6a0ea72e</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -149,7 +113,7 @@
       <guid>1fbe55ab-db5e-42f0-a8ea-a7d73ee2c315</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Shopify Admin/SFA003_InstallApp</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/SFA002_2_InstallAppByXLSXStoredEmail</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -185,13 +149,97 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>7c849cf7-01a2-4ddd-bf9e-bb62ba448d65</variableId>
+         <variableId>f6db0e20-7d3f-40e3-9f68-72e19652c43d</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>f6db0e20-7d3f-40e3-9f68-72e19652c43d</variableId>
+         <variableId>4012cfb3-f305-4c22-985d-5abbbe023a02</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>292e669e-0c99-4286-a2c0-aee8c849931e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3ac8284d-a646-4e36-9423-c5a285da99d8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b5a152fd-197d-40a8-867c-0a23bfdc4c78</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>19e9a2d5-b621-408c-b07d-019ed4e4e506</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cf429075-7d22-4ed5-a46f-c2096c3d001c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>75724918-61b2-4151-8b92-74d85927e7c0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>acf69151-f75d-49a6-acb6-93ac9cd503f0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3559a688-56e7-41b7-adf0-e912d1892ad6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7000dccf-bb5b-4d7f-aca4-9ea3b746b45a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2dbf4610-ee79-4b69-9859-92f1f2679934</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6747ab40-2cef-46fa-ae29-b0317e8aaa60</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2f58d382-0200-4667-b7a4-be9a0ec42c1e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e836cf8a-2952-40d2-ad81-60d25aa12f4a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0dde43c4-c615-4c6c-bf3a-6311253f1b60</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

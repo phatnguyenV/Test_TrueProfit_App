@@ -9,25 +9,7 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b7fb9466-45cf-4f05-8b84-f8c359033aa6</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>27678b1a-36e7-447b-8fdd-141642a991b2</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>c539f03d-4a2d-4edf-b3a4-0ded1626fcff</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>5e0475aa-a0ab-4531-9dc0-31a2e27ac6c9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -69,41 +51,14 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7309ce83-2c9e-48d6-a0f6-33efd59cec91</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>5822e614-6d5b-4c62-b971-547d6a0ea72e</variableId>
    </variableLinks>
-   <variable>
-      <defaultValue>'https://accounts.shopify.com/lookup?rid=d50c60a2-1d7c-469c-a15f-39bc5d99f8bf'</defaultValue>
-      <description></description>
-      <id>b7fb9466-45cf-4f05-8b84-f8c359033aa6</id>
-      <masked>false</masked>
-      <name>url</name>
-   </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/LoginShopify/h2_yourstore')</defaultValue>
       <description></description>
       <id>27678b1a-36e7-447b-8fdd-141642a991b2</id>
       <masked>false</masked>
       <name>h2_yourstore</name>
-   </variable>
-   <variable>
-      <defaultValue>'phatnt@firegroup.io'</defaultValue>
-      <description></description>
-      <id>c539f03d-4a2d-4edf-b3a4-0ded1626fcff</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variable>
-   <variable>
-      <defaultValue>'0BXcTMSMNdRd23Ml/vw4nA=='</defaultValue>
-      <description></description>
-      <id>5e0475aa-a0ab-4531-9dc0-31a2e27ac6c9</id>
-      <masked>false</masked>
-      <name>password</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/LoginShopify/btn_continue_with_email')</defaultValue>
@@ -146,13 +101,6 @@
       <id>ae415e5c-40bd-4353-93e6-66179eb909ed</id>
       <masked>false</masked>
       <name>captcha</name>
-   </variable>
-   <variable>
-      <defaultValue>'https://partners.shopify.com/832504/apps/6756135/test'</defaultValue>
-      <description></description>
-      <id>7309ce83-2c9e-48d6-a0f6-33efd59cec91</id>
-      <masked>false</masked>
-      <name>partner_dev_app</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/CreateStore/a_select_1st_account')</defaultValue>

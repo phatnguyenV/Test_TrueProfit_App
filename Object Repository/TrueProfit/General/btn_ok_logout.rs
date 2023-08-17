@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_password</name>
+   <name>btn_ok_logout</name>
    <tag></tag>
-   <elementGuidId>466ddec5-12da-42ee-a1ea-63e381e11e70</elementGuidId>
+   <elementGuidId>b9bd18e2-b4da-4864-8540-3bf24422f6eb</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@type=&quot;password&quot;]</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[contains(@class, &quot;el-button--small el-button--primary&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

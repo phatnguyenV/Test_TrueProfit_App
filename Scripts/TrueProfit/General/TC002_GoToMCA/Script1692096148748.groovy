@@ -36,9 +36,9 @@ def path_MCA = 'multi-channel-attribution'
 while (WebUI.verifyElementPresent(input_email, 1, FailureHandling.OPTIONAL)) {
     try {
         WebUI.callTestCase(findTestCase('TrueProfit/General/TC001_LoginTrueProfit'), [('account') : [('email_2') : 'phatnt@firegroup.io'
-                    , ('email_1') : 'demo_pa2@gmail.com'], ('btn_sign_in') : findTestObject('TrueProfit/btn_sign_in'), ('btn_sign_in_with_shopify') : findTestObject(
-                    'TrueProfit/btn_sign_in_with_shopify'), ('input_email') : findTestObject('TrueProfit/input_email'), ('input_password') : findTestObject(
-                    'TrueProfit/input_password'), ('main_trueprofit') : findTestObject('TrueProfit/main_trueprofit')], FailureHandling.STOP_ON_FAILURE)
+                    , ('email_1') : 'demo_pa2@gmail.com'], ('btn_sign_in') : findTestObject('TrueProfit/General/btn_signin'), ('btn_sign_in_with_shopify') : findTestObject(
+                    'TrueProfit/btn_sign_in_with_shopify'), ('input_email') : findTestObject('TrueProfit/General/input_email'), ('input_password') : findTestObject(
+                    'TrueProfit/input_password'), ('main_trueprofit') : findTestObject('TrueProfit/General/main_trueprofit')], FailureHandling.STOP_ON_FAILURE)
 
 
         break
@@ -50,12 +50,12 @@ while (WebUI.verifyElementPresent(input_email, 1, FailureHandling.OPTIONAL)) {
 
 WebUI.navigateToUrl(full_url + path_MCA)
 
-WebUI.waitForElementVisible(main_trueprofit, 10)
+WebUI.waitForElementVisible(GlobalVariable.main_trueprofit, 10)
 
 WebUI.refresh()
 
-WebUI.waitForElementVisible(main_trueprofit, 10)
+WebUI.waitForElementVisible(GlobalVariable.main_trueprofit, 10)
 
 WebUI.refresh()
 
-WebUI.waitForElementVisible(main_trueprofit, 10)
+WebUI.waitForElementVisible(GlobalVariable.main_trueprofit, 10)

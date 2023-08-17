@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_sign_in</name>
+   <name>div_menubar</name>
    <tag></tag>
-   <elementGuidId>fe12d056-83ae-42c6-b3b2-1cd5fb64fb7b</elementGuidId>
+   <elementGuidId>5d4f1bc4-55d6-4773-9ba6-e7c7c2633058</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type=&quot;button&quot; and contains(@class, &quot;button--primary&quot;)]</value>
+         <value>//div[@class=&quot;_2qrOq&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

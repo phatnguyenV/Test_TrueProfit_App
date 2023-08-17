@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SFA005_UninstallAppByDomain</name>
+   <name>SFA005_UninstallAppByGlobalDomain</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>dc1b530f-0f4c-4a2a-8ced-9acc736b06c3</testCaseGuid>
@@ -58,12 +58,6 @@
       <type>DEFAULT</type>
       <value></value>
       <variableId>7eaa6dfe-0701-490b-b40b-5a0766ac9be0</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>744e3152-fd27-4cdd-9111-98718f4d67be</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -145,13 +139,6 @@
       <id>7eaa6dfe-0701-490b-b40b-5a0766ac9be0</id>
       <masked>false</masked>
       <name>span_apps_and_sales</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Shopify Admin/UninstallApp/span_option_tp_non_prod')</defaultValue>
-      <description></description>
-      <id>744e3152-fd27-4cdd-9111-98718f4d67be</id>
-      <masked>false</masked>
-      <name>span_option_tp_non_prod</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/UninstallApp/btn_uninstall_dropdown')</defaultValue>

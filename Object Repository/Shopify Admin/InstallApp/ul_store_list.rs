@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_option_tp_non_prod</name>
+   <name>ul_store_list</name>
    <tag></tag>
-   <elementGuidId>8eb428e1-ac3f-48d0-8822-7106ed747a7f</elementGuidId>
+   <elementGuidId>b0c52ce4-dac2-4354-ac3a-6854bac96c48</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(@aria-label, &quot;TrueProfit-NonProd&quot;)]</value>
+         <value>//ul[@class=&quot;Polaris-ResourceList&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_menubar</name>
+   <name>main_trueprofit</name>
    <tag></tag>
-   <elementGuidId>5d4f1bc4-55d6-4773-9ba6-e7c7c2633058</elementGuidId>
+   <elementGuidId>1d4306bf-c798-4dea-a614-73f7ae6d95f3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//main[@id=&quot;member-layout-main&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;_2qrOq&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
