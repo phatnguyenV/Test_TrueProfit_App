@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "E0686D56CA1274930C30D3F588F18E39",
+  "keywordClasses": [
+    {
+      "name": "pkg.ExtractNumber",
+      "keywordMethods": [
+        {
+          "name": "extractNumber",
+          "parameters": [
+            {
+              "name": "input",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

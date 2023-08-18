@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "2CF2068F2B6EA920D662A498080E6C42",
+  "keywordClasses": [
+    {
+      "name": "pkg.ReplaceNumber",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

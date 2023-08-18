@@ -42,7 +42,6 @@ class TestListener {
 //		WebDriver driver = new ChromeDriver(options)
 //		//Cập nhật lại web driver với options đã được custom
 //		DriverFactory.changeWebDriver(driver)
-		
 		WebUI.openBrowser('')
 		WebUI.maximizeWindow()
 	}

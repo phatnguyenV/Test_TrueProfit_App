@@ -7,7 +7,17 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://staging.trueprofit-web.pages.dev/'</initValue>
-      <name>url</name>
+      <name>urlTrueProfit</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'enterprise'</initValue>
+      <name>pricingPlan</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'monthly'</initValue>
+      <name>billingPlan</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -103,5 +113,10 @@
       <description></description>
       <initValue>findTestObject('Shopify Admin/UninstallApp/btn_option_tp_non_prod')</initValue>
       <name>btn_option_tp</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject('Shopify Admin/UninstallApp/btn_uninstall_non_prod_dropdown')</initValue>
+      <name>btn_uninstall_dropdown</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

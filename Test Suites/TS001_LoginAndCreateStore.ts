@@ -15,7 +15,7 @@
       <guid>90adee66-1d3a-443d-8a56-340403608eb8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Shopify Admin/SFA001_LoginShopify</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/Common/SFA001_LoginShopify</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -70,7 +70,7 @@
       <guid>e4c3b77e-cdc2-4954-92d1-c352bf28b4f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Shopify Admin/SFA002_1_CreateStoreByGlobalDomain</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/Common/SFA002_1_CreateStoreByGlobalDomain</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -113,7 +113,7 @@
       <guid>1fbe55ab-db5e-42f0-a8ea-a7d73ee2c315</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Shopify Admin/SFA002_2_InstallAppByXLSXStoredEmail</testCaseId>
+      <testCaseId>Test Cases/Shopify Admin/Common/SFA002_2_InstallAppByXLSXStoredEmail</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
