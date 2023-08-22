@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_first_address</name>
+   <name>gift_card_100</name>
    <tag></tag>
-   <elementGuidId>eded1cc2-b7e8-44b0-b4c9-d1d0e622f61a</elementGuidId>
+   <elementGuidId>a21d35a6-7a40-46a6-8149-9da66ca2d623</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[1]//li[1]</value>
+         <value>//div[contains(@aria-label,&quot;Welcome - $100&quot;)]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

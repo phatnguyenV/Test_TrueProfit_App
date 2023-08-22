@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_first_address</name>
+   <name>btn_refund</name>
    <tag></tag>
-   <elementGuidId>eded1cc2-b7e8-44b0-b4c9-d1d0e622f61a</elementGuidId>
+   <elementGuidId>1705fc3b-0c46-42e6-8d5e-0b4e6f2882f5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[1]//li[1]</value>
+         <value>//span[contains(text(), &quot;Refund&quot;)]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

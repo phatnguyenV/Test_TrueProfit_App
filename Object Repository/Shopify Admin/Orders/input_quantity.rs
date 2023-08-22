@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>li_first_address</name>
+   <description>input_quantity</description>
+   <name>input_quantity</name>
    <tag></tag>
-   <elementGuidId>eded1cc2-b7e8-44b0-b4c9-d1d0e622f61a</elementGuidId>
+   <elementGuidId>ec558fe0-c6f4-47b8-b451-af142a62e8aa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[1]//li[1]</value>
+         <value>//*[@class='Polaris-TextField__Input_30ock' and @min]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

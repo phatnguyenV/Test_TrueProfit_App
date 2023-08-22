@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_first_address</name>
+   <name>td_refunds</name>
    <tag></tag>
-   <elementGuidId>eded1cc2-b7e8-44b0-b4c9-d1d0e622f61a</elementGuidId>
+   <elementGuidId>02d24aca-1cc6-4b78-aaf1-8666e0884542</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//ul[1]//li[1]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//tbody)[1]/tr[3]/td[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

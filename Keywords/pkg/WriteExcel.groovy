@@ -26,6 +26,8 @@ import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet
+import org.apache.poi.ss.usermodel.Workbook
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -58,7 +60,7 @@ public class WriteExcel {
 		workbook.write(fos);
 		fos.close();
 	}
-	
+
 	@Keyword
 	public void saveDomainToExcel(String name) throws IOException{
 		String fileName = "TestData/created_store_domain.xlsx";
@@ -87,5 +89,34 @@ public class WriteExcel {
 		workbook.write(fos);
 		fos.close();
 	}
+	
+	@Keyword
+	public void writeSummaryToExcel(Map<String, Double> variableMap) {
+		Workbook workbook = new XSSFWorkbook()
+		Sheet sheet = workbook.createSheet("Summary")
+	
+		// Create a header row
+		Row headerRow = sheet.createRow(0)
+		headerRow.createCell(0).setCellValue("Variable")
+		headerRow.createCell(1).setCellValue("Value")
+	
+		int rowIndex = 1
+		variableMap.each { variableName, value ->
+			Row dataRow = sheet.createRow(rowIndex++)
+			dataRow.createCell(0).setCellValue(variableName)
+			dataRow.createCell(1).setCellValue(value)
+		}
+	
+		// Save the workbook to a file
+		def excelFilePath = "TestData/finances_summary_report.xlsx"
+		FileOutputStream fileOut = new FileOutputStream(excelFilePath)
+		workbook.write(fileOut)
+		fileOut.close()
+		workbook.close()
+	
+		println "Values written to Excel file: $excelFilePath"
+	}
 }
+
+
 

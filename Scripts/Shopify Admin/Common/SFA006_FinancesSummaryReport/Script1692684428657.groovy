@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import java.util.ResourceBundle.Control as Control
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -14,18 +15,27 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+import org.openqa.selenium.Rectangle as Rectangle
+import org.openqa.selenium.remote.server.DriverFactory as DriverFactory
 import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable as GlobalVariablvere
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
+import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
+import org.openqa.selenium.Capabilities as Capabilities
+import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
+import pkg.ReplaceNumber as ReplaceNumber
 
 def storeDomain = GlobalVariable.store_domain
 
-//def storeDomain = 'phatnt-newstore-1'
-//Go to the store's Shopify Admin
-def storeAdmin = (GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name
+def storeAdmin = ((GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name) + '/reports/finances'
 
 WebUI.navigateToUrl(storeAdmin)
 
-//Login to Shopify admin if it is required
+// Login to Shopify admin if it is required
 while (WebUI.verifyElementPresent(GlobalVariable.txt_email, 1, FailureHandling.OPTIONAL)) {
     try {
         WebUI.callTestCase(findTestCase('Shopify Admin/Common/SFA001_LoginShopify'), [('url') : 'https://accounts.shopify.com/lookup?rid=d50c60a2-1d7c-469c-a15f-39bc5d99f8bf'
@@ -44,57 +54,42 @@ while (WebUI.verifyElementPresent(GlobalVariable.txt_email, 1, FailureHandling.O
     } 
 }
 
-//Select the first account on Shopify
-if (WebUI.verifyElementPresent(GlobalVariable.a_select_1st_account, 2, FailureHandling.OPTIONAL)) {
+// Select the first account on Shopify if required
+if (WebUI.verifyElementPresent(GlobalVariable.a_select_1st_account, 1, FailureHandling.OPTIONAL)) {
     WebUI.click(GlobalVariable.a_select_1st_account)
 }
 
+WebUI.waitForElementVisible(div_layout, 10)
 
+WebUI.waitForElementClickable(btn_summary_date_range, 3)
 
-WebUI.waitForElementPresent(span_orders, 1)
-WebUI.click(span_orders)
+WebUI.click(btn_summary_date_range)
 
-//Click "Leave page" if already opened the create order page
-if (WebUI.verifyElementPresent(btn_leave_page, 1, FailureHandling.OPTIONAL)) {
-	WebUI.click(btn_leave_page)
-	WebUI.waitForElementPresent(span_orders, 1)
-	WebUI.click(span_orders)
+WebUI.waitForElementClickable(li_today_filter, 3)
+
+WebUI.click(li_today_filter)
+
+WebUI.delay(1)
+
+WebUI.click(btn_apply)
+
+WebUI.delay(3)
+
+// Store the numeric values and their corresponding element locators
+Map<String, TestObject> numericValueElements = [
+    'gross_sales': gross_sales, 'discounts': discounts, 'refunds': refunds,
+    'net_sales': net_sales, 'shipping_charge': shipping_charge, 'taxes': taxes,
+    'total_sales': total_sales, 'gift_card': gift_card, 'tips': tips
+]
+
+// Extract and store numeric values
+Map<String, Double> variableMap = [:]
+numericValueElements.each { variableName, element ->
+	def numericValue = ReplaceNumber.removeDollarSymbol(WebUI.getText(element)).toDouble()
+	variableMap[variableName] = numericValue
 }
 
-WebUI.waitForElementPresent(span_create_order, 1)
+// Call the function to write the values to an Excel file
+CustomKeywords.'pkg.WriteExcel.writeSummaryToExcel'(variableMap)
 
-WebUI.click(span_create_order)
-
-WebUI.waitForElementPresent(span_browser, 1)
-
-WebUI.click(span_browser)
-
-WebUI.waitForElementPresent(input_search_products, 1)
-
-WebUI.sendKeys(input_search_products, 'Antique Drawers')
-
-WebUI.waitForElementPresent(select_antique, 1)
-
-WebUI.click(select_antique)
-
-WebUI.waitForElementPresent(btn_add, 1)
-
-WebUI.click(btn_add)
-
-WebUI.click(btn_collect_payment)
-
-WebUI.waitForElementPresent(mark_as_paid, 1)
-
-WebUI.click(mark_as_paid)
-
-WebUI.waitForElementPresent(span_create_order, 1)
-
-WebUI.click(span_create_order)
-
-WebUI.waitForElementPresent(div_order_list, 1)
-
-WebUI.delay(2)
-
-WebUI.click(tr_latest_order)
-
-WebUI.waitForElementPresent(section_order_details, 1)
+WebUI.takeFullPageScreenshot(('screenshot/summary_report/' + storeDomain) + '_finances_summary_report.png')

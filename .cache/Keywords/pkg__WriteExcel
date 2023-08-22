@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "F3F9B47FCB17367DA28B97C876BC1664",
+  "keywordFileContentHash": "01B4AD99A42D49DE9652B010AEB00EFA",
   "keywordClasses": [
     {
       "name": "pkg.WriteExcel",
@@ -36,6 +36,44 @@
                 "isGnericsPlaceHolder": false,
                 "hasImmutableClassName": false,
                 "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "writeSummaryToExcel",
+          "parameters": [
+            {
+              "name": "variableMap",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Map",
+                "unresolvedClassName": "Map",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [
+                  {
+                    "fullClassName": "java.lang.String",
+                    "unresolvedClassName": "String",
+                    "isArray": false,
+                    "isGnericsPlaceHolder": false,
+                    "hasImmutableClassName": false,
+                    "genericsTypes": [],
+                    "errorOnParsing": false
+                  },
+                  {
+                    "fullClassName": "java.lang.Double",
+                    "unresolvedClassName": "Double",
+                    "isArray": false,
+                    "isGnericsPlaceHolder": false,
+                    "hasImmutableClassName": false,
+                    "genericsTypes": [],
+                    "errorOnParsing": false
+                  }
+                ],
                 "errorOnParsing": false
               }
             }

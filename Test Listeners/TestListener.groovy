@@ -3,7 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.checkpoint.Checkpoint
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
@@ -30,20 +31,45 @@ class TestListener {
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	@BeforeTestCase
+//	@BeforeTestCase
 	def maximizeBrowserForTestCase() {
-//		// Khởi tạo chromre driver
-//		System.setProperty('webdriver.chrome.driver', DriverFactory.getChromeDriverPath())
-//		// Khởi tạo chrome option để custom lại chrome driver
-//		ChromeOptions options = new ChromeOptions()
-//		
-//		options.addArguments('start-maximized')
-//		
-//		WebDriver driver = new ChromeDriver(options)
-//		//Cập nhật lại web driver với options đã được custom
-//		DriverFactory.changeWebDriver(driver)
 		WebUI.openBrowser('')
 		WebUI.maximizeWindow()
+	}
+	
+	@BeforeTestCase
+	def openBrowserWithCustomizedProfile() {
+		//Specify the installed folder to get chromedrider.exe
+		def projectDir = RunConfiguration.getProjectDir()
+		def parentDir = new File(projectDir).parentFile
+		def katalonInstalledFolder = new File(parentDir, "Katalon_Studio_Windows_64-8.6.5")
+		def pathToChromeDriver = "${katalonInstalledFolder}\\Katalon_Studio_Windows_64-8.6.5\\configuration\\resources\\drivers\\chromedriver_win32\\chromedriver.exe"
+		println("Path to ChromeDriver: ${pathToChromeDriver}")
+		System.setProperty("webdriver.chrome.driver", pathToChromeDriver)
+		// It is only OK if all chrome browsers are closed
+		//def userProfile = System.getenv("USERPROFILE");
+		//def chromeProfilePath = userProfile  + "AppData\\Local\\Google\\Chrome\\User Data";
+
+		// Solution 1: Copy the "Default" and "Profile X" in User Data to newly folder,
+		// then change the path and you can use these profiles separately with Chrome.
+		def chromeProfilePath = "C:\\User Data"
+		println(chromeProfilePath)
+
+		ChromeOptions options  = new ChromeOptions();
+		// Solution 2: Using Chrome "--headless" without GUI
+		//options.addArguments('--headless')
+		options.addArguments("--no-sandbox");// Bypass OS security model
+		options.addArguments("user-data-dir=" + chromeProfilePath);
+		options.addArguments("profile-directory=Profile 3");
+		options.addArguments("start-maximized"); // Open Browser in maximized mode
+		options.addArguments("--disable-dev-shm-usage");  // Overcome limited resource problems
+		options.addArguments("disable-infobars"); // Disabling infobars
+		options.addArguments("--disable-gpu"); // applicable to Windows OS only
+		//options.addArguments("--disable-extensions"); // Disabling extensions
+		ChromeDriver driver = new ChromeDriver(options);
+		driver.get("https://google.com");
+		DriverFactory.changeWebDriver(driver)
+		
 	}
 
 	/**

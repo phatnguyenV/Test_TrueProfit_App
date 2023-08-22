@@ -17,7 +17,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import test.ReadExcel as ReadExcel
+import pkg.ReadExcel as ReadExcel
 
 def AdFacebook = [('antique_drawers_1111') : '?tp_source=facebook&tp_adid=1111&tp_productid=8326381666626', ('antique_drawers_1121') : '?tp_source=facebook&tp_adid=1121&tp_productid=8326381666626'
     , ('antique_drawers_1211') : '?tp_source=facebook&tp_adid=1211&tp_productid=8326381666626', ('antique_drawers_1112') : '?tp_source=facebook&tp_adid=1112&tp_productid=8326381666626'
@@ -163,11 +163,15 @@ def makePayment() {
 
     WebUI.sendKeys(address, randomInput)
 
-    WebUI.waitForElementPresent(first_address_suggestion, 5)
+    WebUI.waitForElementPresent(first_address_suggestion, 3)
+	
+	WebUI.delay(2)
 
     WebUI.click(first_address_suggestion)
 
     WebUI.scrollToPosition(0, 400)
+	
+	WebUI.delay(2)
 
     WebUI.click(btn_continue)
 

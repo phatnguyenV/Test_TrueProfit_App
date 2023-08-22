@@ -1,164 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CO001_SingleItemNoCustomer</name>
+   <name>CO001_2_VariousItems</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>368d058f-5847-4370-9fe4-88681aac8652</testCaseGuid>
+   <testCaseGuid>3ebb8321-6872-4c1e-a778-83a81d98300d</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ed16e2cd-5b1d-4720-bf39-4258496795cf</variableId>
+      <variableId>ff536531-19b8-4eb1-90ee-11f0a4b6b40e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>254a4d37-93e3-4a0e-b4d6-6bf5f2551046</variableId>
+      <variableId>be6934c8-bcb4-48e9-89da-1da75fa054d1</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ffabbad9-de74-45fb-8dda-d93a839340c1</variableId>
+      <variableId>4aba2906-0774-4304-b104-2772054b000b</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>915191b6-35cf-4df1-a997-d382c5e6a135</variableId>
+      <variableId>55ca44b4-532f-4992-b264-51e22f8f0614</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>1e8be3d1-82fa-49c4-98a6-b9c9eee88ffb</variableId>
+      <variableId>0ec237ca-3d7a-462e-aeb7-cccec5854a18</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>deb5df98-3840-4334-90ad-c6bf0d7c2774</variableId>
+      <variableId>53c91ae9-3f99-4c39-8061-715736b48f4a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9f02b93b-f3fc-49d4-9557-a6f21ff6a09a</variableId>
+      <variableId>0b6b8e1e-2576-4d90-ba19-846999190353</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b75c46a0-bea7-48e2-b34b-291de569226e</variableId>
+      <variableId>3634966c-6831-401e-b8e9-2b8ac8b3b87e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>56cd55bf-a6a5-4dc1-93e4-f026eedf6cee</variableId>
+      <variableId>12c07e8a-9d4f-46f2-a578-bf79c93c198e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3ef733f2-a5aa-435f-8613-412db97b41c3</variableId>
+      <variableId>1f14d3ed-b052-4beb-907e-a1a47b913ae7</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f5d0dda3-2525-49e7-b476-a4b4a0e21af2</variableId>
+      <variableId>0bb91ab9-55cc-42b2-b000-61ad40de3611</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7c00360f-4e8d-4f4c-8477-69f7333157a9</variableId>
+      <variableId>d3cd71df-9236-41ba-825d-f395359fe897</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f64063c2-5f7f-4cd9-ac84-1ff851806372</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>965e323f-50c4-450e-a23b-6813c86420e3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c39dec80-5381-482c-9ba4-b462d62f315b</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/span_orders')</defaultValue>
       <description></description>
-      <id>ed16e2cd-5b1d-4720-bf39-4258496795cf</id>
+      <id>ff536531-19b8-4eb1-90ee-11f0a4b6b40e</id>
       <masked>false</masked>
       <name>span_orders</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/span_create_order')</defaultValue>
       <description></description>
-      <id>254a4d37-93e3-4a0e-b4d6-6bf5f2551046</id>
+      <id>be6934c8-bcb4-48e9-89da-1da75fa054d1</id>
       <masked>false</masked>
       <name>span_create_order</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/span_browse')</defaultValue>
       <description></description>
-      <id>ffabbad9-de74-45fb-8dda-d93a839340c1</id>
+      <id>4aba2906-0774-4304-b104-2772054b000b</id>
       <masked>false</masked>
       <name>span_browser</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/input_search_products')</defaultValue>
       <description></description>
-      <id>915191b6-35cf-4df1-a997-d382c5e6a135</id>
+      <id>55ca44b4-532f-4992-b264-51e22f8f0614</id>
       <masked>false</masked>
       <name>input_search_products</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Shopify Admin/Orders/div_select_antique')</defaultValue>
+      <defaultValue>findTestObject('Shopify Admin/Orders/div_select_first_item')</defaultValue>
       <description></description>
-      <id>1e8be3d1-82fa-49c4-98a6-b9c9eee88ffb</id>
+      <id>0ec237ca-3d7a-462e-aeb7-cccec5854a18</id>
       <masked>false</masked>
-      <name>select_antique</name>
+      <name>select_first_item</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/btn_add')</defaultValue>
       <description></description>
-      <id>deb5df98-3840-4334-90ad-c6bf0d7c2774</id>
+      <id>53c91ae9-3f99-4c39-8061-715736b48f4a</id>
       <masked>false</masked>
       <name>btn_add</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/btn_collect_payment')</defaultValue>
       <description></description>
-      <id>9f02b93b-f3fc-49d4-9557-a6f21ff6a09a</id>
+      <id>0b6b8e1e-2576-4d90-ba19-846999190353</id>
       <masked>false</masked>
       <name>btn_collect_payment</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/span_mark_as_paid')</defaultValue>
       <description></description>
-      <id>b75c46a0-bea7-48e2-b34b-291de569226e</id>
+      <id>3634966c-6831-401e-b8e9-2b8ac8b3b87e</id>
       <masked>false</masked>
       <name>mark_as_paid</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/div_order_list')</defaultValue>
       <description></description>
-      <id>56cd55bf-a6a5-4dc1-93e4-f026eedf6cee</id>
+      <id>12c07e8a-9d4f-46f2-a578-bf79c93c198e</id>
       <masked>false</masked>
       <name>div_order_list</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/tr_latest_order')</defaultValue>
       <description></description>
-      <id>3ef733f2-a5aa-435f-8613-412db97b41c3</id>
+      <id>1f14d3ed-b052-4beb-907e-a1a47b913ae7</id>
       <masked>false</masked>
       <name>tr_latest_order</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/section_order_details')</defaultValue>
       <description></description>
-      <id>f5d0dda3-2525-49e7-b476-a4b4a0e21af2</id>
+      <id>0bb91ab9-55cc-42b2-b000-61ad40de3611</id>
       <masked>false</masked>
       <name>section_order_details</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/btn_leave_page')</defaultValue>
       <description></description>
-      <id>7c00360f-4e8d-4f4c-8477-69f7333157a9</id>
+      <id>d3cd71df-9236-41ba-825d-f395359fe897</id>
       <masked>false</masked>
       <name>btn_leave_page</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/Orders/input_customer')</defaultValue>
+      <description></description>
+      <id>f64063c2-5f7f-4cd9-ac84-1ff851806372</id>
+      <masked>false</masked>
+      <name>input_customer</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/Orders/input_search_product_has_value')</defaultValue>
+      <description></description>
+      <id>965e323f-50c4-450e-a23b-6813c86420e3</id>
+      <masked>false</masked>
+      <name>input_search_products_has_value</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/Orders/input_quantity')</defaultValue>
+      <description></description>
+      <id>c39dec80-5381-482c-9ba4-b462d62f315b</id>
+      <masked>false</masked>
+      <name>input_quantity</name>
    </variable>
 </TestCaseEntity>

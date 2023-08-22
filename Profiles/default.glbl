@@ -21,12 +21,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>true</initValue>
+      <name>isOrderCustomer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'4aUHZLRHJF4='</initValue>
       <name>default_password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'new-new-new-store-0'</initValue>
+      <initValue>'ultimate-neww'</initValue>
       <name>store_domain</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
