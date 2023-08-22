@@ -9,18 +9,6 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>1b3dc445-68ff-465d-b295-51896c1825c9</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>f2535250-a3d7-489f-bf07-561a4a64cd68</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>6639f23b-1865-436d-9586-749340cfcb91</variableId>
    </variableLinks>
    <variableLinks>
@@ -28,6 +16,12 @@
       <type>DEFAULT</type>
       <value></value>
       <variableId>b80b5f9e-cfd1-4446-a136-dca8ac0aa1e7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>514b1240-4aef-485a-9955-a219e3b3f66d</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -51,13 +45,19 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
+      <variableId>86d19b0e-59aa-426a-b048-a82631aac01d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
       <variableId>04b35f00-3177-4ae2-b13a-388757bc25bd</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>514b1240-4aef-485a-9955-a219e3b3f66d</variableId>
+      <variableId>398400ce-93bf-4af6-ac7a-3197ec5c0b25</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -99,40 +99,8 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>86d19b0e-59aa-426a-b048-a82631aac01d</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>698018c5-bb88-4649-9f5a-13924d05aaee</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>398400ce-93bf-4af6-ac7a-3197ec5c0b25</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>6ddf4c2e-e7fd-47df-b49f-a65200e59986</variableId>
-   </variableLinks>
-   <variable>
-      <defaultValue>'phatnt@firegroup.io'</defaultValue>
-      <description></description>
-      <id>1b3dc445-68ff-465d-b295-51896c1825c9</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variable>
-   <variable>
-      <defaultValue>'0BXcTMSMNdRd23Ml/vw4nA=='</defaultValue>
-      <description></description>
-      <id>f2535250-a3d7-489f-bf07-561a4a64cd68</id>
-      <masked>false</masked>
-      <name>password</name>
-   </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/LoginShopify/btn_continue_with_email')</defaultValue>
       <description></description>
@@ -148,6 +116,13 @@
       <name>btn_login</name>
    </variable>
    <variable>
+      <defaultValue>findTestObject('Shopify Admin/LoginShopify/txt_password')</defaultValue>
+      <description></description>
+      <id>514b1240-4aef-485a-9955-a219e3b3f66d</id>
+      <masked>false</masked>
+      <name>txt_password</name>
+   </variable>
+   <variable>
       <defaultValue>findTestObject('Shopify Admin/InstallApp/btn_install')</defaultValue>
       <description></description>
       <id>f4a6cfa9-a2f3-48ce-8991-88a38d5f89f9</id>
@@ -155,18 +130,25 @@
       <name>btn_install</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_signin')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_signin')</defaultValue>
       <description></description>
       <id>c7f453f5-f776-46f2-8b6a-0155be1eea83</id>
       <masked>false</masked>
       <name>btn_signin</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_login_with_shopify')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_sign_in_with_shopify')</defaultValue>
       <description></description>
       <id>326cf9cf-2520-4895-bfc2-a9eac2167ea2</id>
       <masked>false</masked>
       <name>btn_login_with_shopify</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/input_shopify_domain')</defaultValue>
+      <description></description>
+      <id>86d19b0e-59aa-426a-b048-a82631aac01d</id>
+      <masked>false</masked>
+      <name>input_shopify_domain</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/InstallApp/btn_get_started')</defaultValue>
@@ -176,11 +158,11 @@
       <name>btn_get_started</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Shopify Admin/LoginShopify/txt_password')</defaultValue>
+      <defaultValue>findTestObject('Shopify Admin/InstallApp/div_shop_not_found')</defaultValue>
       <description></description>
-      <id>514b1240-4aef-485a-9955-a219e3b3f66d</id>
+      <id>398400ce-93bf-4af6-ac7a-3197ec5c0b25</id>
       <masked>false</masked>
-      <name>txt_password</name>
+      <name>shop_not_found</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/CreateStore/a_select_1st_account')</defaultValue>
@@ -225,31 +207,10 @@
       <name>uninstalled_successfully</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/input_shopify_domain')</defaultValue>
-      <description></description>
-      <id>86d19b0e-59aa-426a-b048-a82631aac01d</id>
-      <masked>false</masked>
-      <name>input_shopify_domain</name>
-   </variable>
-   <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>698018c5-bb88-4649-9f5a-13924d05aaee</id>
       <masked>false</masked>
       <name>domain</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Shopify Admin/InstallApp/div_shop_not_found')</defaultValue>
-      <description></description>
-      <id>398400ce-93bf-4af6-ac7a-3197ec5c0b25</id>
-      <masked>false</masked>
-      <name>shop_not_found</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('TrueProfit/main_trueprofit')</defaultValue>
-      <description></description>
-      <id>6ddf4c2e-e7fd-47df-b49f-a65200e59986</id>
-      <masked>false</masked>
-      <name>main_trueprofit</name>
    </variable>
 </TestCaseEntity>

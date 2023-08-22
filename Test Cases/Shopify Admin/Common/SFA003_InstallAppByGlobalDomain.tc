@@ -33,6 +33,24 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
+      <variableId>2dbf4610-ee79-4b69-9859-92f1f2679934</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6747ab40-2cef-46fa-ae29-b0317e8aaa60</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2f58d382-0200-4667-b7a4-be9a0ec42c1e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
       <variableId>04b35f00-3177-4ae2-b13a-388757bc25bd</variableId>
    </variableLinks>
    <variableLinks>
@@ -111,24 +129,6 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>2dbf4610-ee79-4b69-9859-92f1f2679934</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>6747ab40-2cef-46fa-ae29-b0317e8aaa60</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>2f58d382-0200-4667-b7a4-be9a0ec42c1e</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>e836cf8a-2952-40d2-ad81-60d25aa12f4a</variableId>
    </variableLinks>
    <variable>
@@ -139,25 +139,46 @@
       <name>btn_install</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/input_shopify_domain')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/input_shopify_domain')</defaultValue>
       <description></description>
       <id>86d19b0e-59aa-426a-b048-a82631aac01d</id>
       <masked>false</masked>
       <name>input_shopify_domain</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_login_with_shopify')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_login_with_shopify')</defaultValue>
       <description></description>
       <id>326cf9cf-2520-4895-bfc2-a9eac2167ea2</id>
       <masked>false</masked>
       <name>btn_login_with_shopify</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_signin')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_signin')</defaultValue>
       <description></description>
       <id>c7f453f5-f776-46f2-8b6a-0155be1eea83</id>
       <masked>false</masked>
       <name>btn_signin</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_gear_option')</defaultValue>
+      <description></description>
+      <id>2dbf4610-ee79-4b69-9859-92f1f2679934</id>
+      <masked>false</masked>
+      <name>gear_option</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_logout_trueprofit')</defaultValue>
+      <description></description>
+      <id>6747ab40-2cef-46fa-ae29-b0317e8aaa60</id>
+      <masked>false</masked>
+      <name>btn_logout_trueprofit</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_ok_logout')</defaultValue>
+      <description></description>
+      <id>2f58d382-0200-4667-b7a4-be9a0ec42c1e</id>
+      <masked>false</masked>
+      <name>btn_ok_logout</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('TrueProfit/Onboarding/btn_get_started')</defaultValue>
@@ -249,27 +270,6 @@
       <id>7000dccf-bb5b-4d7f-aca4-9ea3b746b45a</id>
       <masked>false</masked>
       <name>btn_install_app_popup</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_gear_option')</defaultValue>
-      <description></description>
-      <id>2dbf4610-ee79-4b69-9859-92f1f2679934</id>
-      <masked>false</masked>
-      <name>gear_option</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_logout_trueprofit')</defaultValue>
-      <description></description>
-      <id>6747ab40-2cef-46fa-ae29-b0317e8aaa60</id>
-      <masked>false</masked>
-      <name>btn_logout_trueprofit</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_ok_logout')</defaultValue>
-      <description></description>
-      <id>2f58d382-0200-4667-b7a4-be9a0ec42c1e</id>
-      <masked>false</masked>
-      <name>btn_ok_logout</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/InstallApp/btn_enabled_install')</defaultValue>

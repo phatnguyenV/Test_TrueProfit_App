@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>GR001_1_LoginTrueProfitByAccount</name>
+   <name>TP001_1_LoginTrueProfitByAccount</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>5440295b-a437-435c-ac9e-77f82c9d6741</testCaseGuid>
@@ -33,12 +33,6 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>28a10ea4-fcfa-4fd2-8d5a-aab70566bb8c</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>0b96955f-5e69-4519-bbe3-4fad28ab3a35</variableId>
    </variableLinks>
    <variable>
@@ -49,35 +43,28 @@
       <name>account</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_signin')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_signin')</defaultValue>
       <description></description>
       <id>d13aa440-5496-4ebf-82f6-2eadd5fbb76e</id>
       <masked>false</masked>
       <name>btn_sign_in</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/input_email')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/input_email')</defaultValue>
       <description></description>
       <id>21ed4b26-c3d5-4052-8950-3eca96ff8a8a</id>
       <masked>false</masked>
       <name>input_email</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/input_password')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/input_password')</defaultValue>
       <description></description>
       <id>ba17b4d0-30f5-494b-a3f8-74a50b0e56b5</id>
       <masked>false</masked>
       <name>input_password</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/main_trueprofit')</defaultValue>
-      <description></description>
-      <id>28a10ea4-fcfa-4fd2-8d5a-aab70566bb8c</id>
-      <masked>false</masked>
-      <name>main_trueprofit</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('TrueProfit/General/div_menubar')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/div_menubar')</defaultValue>
       <description></description>
       <id>0b96955f-5e69-4519-bbe3-4fad28ab3a35</id>
       <masked>false</masked>

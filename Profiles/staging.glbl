@@ -111,7 +111,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>findTestObject('TrueProfit/General/main_trueprofit')</initValue>
+      <initValue>findTestObject('TrueProfit/Common/main_trueprofit')</initValue>
       <name>main_trueprofit</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

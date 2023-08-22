@@ -27,11 +27,11 @@ WebUI.navigateToUrl(urlTrueProfit)
 
 // Call the login test case if required by the app
 if (WebUI.verifyElementPresent(input_email, 1, FailureHandling.OPTIONAL)) {
-    WebUI.callTestCase(findTestCase('TrueProfit/Common/GR001_1_LoginTrueProfitByAccount'), [('account') : [('email_2') : 'phatnt@firegroup.io'
+    WebUI.callTestCase(findTestCase('TrueProfit/Common/TP001_1_LoginTrueProfitByAccount'), [('account') : [('email_2') : 'phatnt@firegroup.io'
                 , ('email_1') : 'demo_pa2@gmail.com', ('email_3') : 'triettm@firegroup.io'], ('btn_sign_in') : findTestObject(
-                'TrueProfit/General/btn_signin'), ('input_email') : findTestObject('TrueProfit/General/input_email'), ('input_password') : findTestObject(
-                'TrueProfit/General/input_password'), ('main_trueprofit') : findTestObject('TrueProfit/General/main_trueprofit')
-            , ('menubar') : findTestObject('TrueProfit/General/div_menubar')], FailureHandling.STOP_ON_FAILURE)
+                'TrueProfit/General/btn_signin'), ('input_email') : findTestObject('TrueProfit/Common/input_email'), ('input_password') : findTestObject(
+                'TrueProfit/General/input_password'), ('main_trueprofit') : findTestObject('TrueProfit/Common/main_trueprofit')
+            , ('menubar') : findTestObject('TrueProfit/Common/div_menubar')], FailureHandling.STOP_ON_FAILURE)
 }
 
 if (WebUI.verifyElementPresent(div_left_nav_menu, 1, FailureHandling.OPTIONAL)) {

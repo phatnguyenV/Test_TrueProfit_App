@@ -35,22 +35,23 @@ def urlTrueProfit = GlobalVariable.urlTrueProfit
 
 def path_MCA = 'multi-channel-attribution'
 
+WebUI.navigateToUrl(urlTrueProfit + path_MCA)
+
 // Call the login test case if required by the app
 while (WebUI.verifyElementPresent(input_email, 1, FailureHandling.OPTIONAL)) {
     try {
-        WebUI.callTestCase(findTestCase('TrueProfit/Common/GR001_1_LoginTrueProfitByAccount'), [('account') : [('email_2') : 'phatnt@firegroup.io'
-                    , ('email_1') : 'demo_pa2@gmail.com'], ('btn_sign_in') : findTestObject('TrueProfit/General/btn_signin'), ('btn_sign_in_with_shopify') : findTestObject(
-                    'TrueProfit/btn_sign_in_with_shopify'), ('input_email') : findTestObject('TrueProfit/General/input_email'), ('input_password') : findTestObject(
-                    'TrueProfit/input_password'), ('main_trueprofit') : findTestObject('TrueProfit/General/main_trueprofit')], FailureHandling.STOP_ON_FAILURE)
-
+        WebUI.callTestCase(findTestCase('TrueProfit/Common/TP001_1_LoginTrueProfitByAccount'), [('account') : [('email_2') : 'phatnt@firegroup.io'
+                    , ('email_1') : 'demo_pa2@gmail.com'], ('btn_sign_in') : findTestObject('TrueProfit/Common/btn_signin'), ('btn_sign_in_with_shopify') : findTestObject(
+                    'TrueProfit/btn_sign_in_with_shopify'), ('input_email') : findTestObject('TrueProfit/Common/input_email'), ('input_password') : findTestObject(
+                    'TrueProfit/input_password'), ('main_trueprofit') : findTestObject('TrueProfit/Common/main_trueprofit')], FailureHandling.STOP_ON_FAILURE)
+		WebUI.navigateToUrl(urlTrueProfit + path_MCA)
+		
         break
     }
     catch (Exception e) {
         println(e)
     } 
 }
-
-WebUI.navigateToUrl(urlTrueProfit + path_MCA)
 
 WebUI.waitForElementVisible(GlobalVariable.main_trueprofit, 10)
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>GR002_CompleteOnboarding</name>
+   <name>TP002_CompleteOnboarding</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>9e18d658-c8ed-4d20-ba58-947c14e2df63</testCaseGuid>
@@ -120,35 +120,35 @@
       <variableId>41077d48-974d-4940-91f4-88cae2953220</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/input_email')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/input_email')</defaultValue>
       <description></description>
       <id>087b3f12-c0a2-4871-94cd-9e432b5a7d2e</id>
       <masked>false</masked>
       <name>input_email</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/input_password')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/input_password')</defaultValue>
       <description></description>
       <id>fd870fbc-f2b0-4ce5-95d8-d45da84896f9</id>
       <masked>false</masked>
       <name>txt_password</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/input_shopify_domain')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/input_shopify_domain')</defaultValue>
       <description></description>
       <id>c07f264d-c898-4539-8098-758c71b318b8</id>
       <masked>false</masked>
       <name>input_shopify_domain</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_signin')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_signin')</defaultValue>
       <description></description>
       <id>a996ae66-e7cd-429f-8b7e-7c356752fa95</id>
       <masked>false</masked>
       <name>btn_signin</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/General/btn_login_with_shopify')</defaultValue>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_login_with_shopify')</defaultValue>
       <description></description>
       <id>c47621dc-40ad-4160-9491-858bc121a4f4</id>
       <masked>false</masked>

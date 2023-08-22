@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TP003_Dashboard</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>76cf292f-1d5c-4b6d-8d43-d1fcfe1569a1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7cafd085-309e-4bce-9ca0-21fca9125dd8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/input_email')</defaultValue>
+      <description></description>
+      <id>7cafd085-309e-4bce-9ca0-21fca9125dd8</id>
+      <masked>false</masked>
+      <name>input_email</name>
+   </variable>
+</TestCaseEntity>

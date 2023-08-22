@@ -76,18 +76,17 @@ WebUI.click(btn_apply)
 WebUI.delay(3)
 
 // Store the numeric values and their corresponding element locators
-Map<String, TestObject> numericValueElements = [
-    'gross_sales': gross_sales, 'discounts': discounts, 'refunds': refunds,
-    'net_sales': net_sales, 'shipping_charge': shipping_charge, 'taxes': taxes,
-    'total_sales': total_sales, 'gift_card': gift_card, 'tips': tips
-]
+Map numericValueElements = [('gross_sales') : gross_sales, ('discounts') : discounts, ('refunds') : refunds, ('shipping_charge') : shipping_charge
+    , ('taxes') : taxes, ('gift_card') : gift_card, ('tips') : tips]
 
 // Extract and store numeric values
-Map<String, Double> variableMap = [:]
-numericValueElements.each { variableName, element ->
-	def numericValue = ReplaceNumber.removeDollarSymbol(WebUI.getText(element)).toDouble()
-	variableMap[variableName] = numericValue
-}
+Map variableMap = [:]
+
+numericValueElements.each({ def variableName, def element ->
+        def numericValue = ReplaceNumber.removeDollarSymbol(WebUI.getText(element)).toDouble()
+
+        (variableMap[variableName]) = numericValue
+    })
 
 // Call the function to write the values to an Excel file
 CustomKeywords.'pkg.WriteExcel.writeSummaryToExcel'(variableMap)
