@@ -29,5 +29,5 @@ public static String replaceNumber(String input, int number) {
 }
 
 public static String removeDollarSymbol(String input) {
-	return input.replaceAll("[\$,]", "")
+	return input.replaceAll("[\$,%]", "")
 }

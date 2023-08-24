@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "01B4AD99A42D49DE9652B010AEB00EFA",
+  "keywordFileContentHash": "90540BFA31FB6D657C037DB7F3345C82",
   "keywordClasses": [
     {
       "name": "pkg.WriteExcel",
@@ -67,6 +67,44 @@
                   {
                     "fullClassName": "java.lang.Double",
                     "unresolvedClassName": "Double",
+                    "isArray": false,
+                    "isGnericsPlaceHolder": false,
+                    "hasImmutableClassName": false,
+                    "genericsTypes": [],
+                    "errorOnParsing": false
+                  }
+                ],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "writeDashboardMetricToExcel",
+          "parameters": [
+            {
+              "name": "variableMap",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Map",
+                "unresolvedClassName": "Map",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [
+                  {
+                    "fullClassName": "java.lang.String",
+                    "unresolvedClassName": "String",
+                    "isArray": false,
+                    "isGnericsPlaceHolder": false,
+                    "hasImmutableClassName": false,
+                    "genericsTypes": [],
+                    "errorOnParsing": false
+                  },
+                  {
+                    "fullClassName": "java.lang.String",
+                    "unresolvedClassName": "String",
                     "isArray": false,
                     "isGnericsPlaceHolder": false,
                     "hasImmutableClassName": false,

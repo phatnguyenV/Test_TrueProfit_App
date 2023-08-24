@@ -16,6 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 
 import internal.GlobalVariable
+import junit.extensions.TestSetup
+
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
@@ -27,6 +29,8 @@ import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
 class TestListener {
+	
+	static boolean browserOpened = false
 	/**
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
@@ -38,8 +42,9 @@ class TestListener {
 	}
 	
 	@BeforeTestCase
-	def openBrowserWithCustomizedProfile() {
-		//Specify the installed folder to get chromedrider.exe
+	def openBrowserWithCustomizedProfileForTestCase() {
+		if (!TestListener.browserOpened) {  // Check if the browser has not been opened yet
+			//Specify the installed folder to get chromedrider.exe
 		def projectDir = RunConfiguration.getProjectDir()
 		def parentDir = new File(projectDir).parentFile
 		def katalonInstalledFolder = new File(parentDir, "Katalon_Studio_Windows_64-8.6.5")
@@ -48,7 +53,7 @@ class TestListener {
 		System.setProperty("webdriver.chrome.driver", pathToChromeDriver)
 		// It is only OK if all chrome browsers are closed
 		//def userProfile = System.getenv("USERPROFILE");
-		//def chromeProfilePath = userProfile  + "AppData\\Local\\Google\\Chrome\\User Data";
+			//def chromeProfilePath = userProfile  + "AppData\\Local\\Google\\Chrome\\User Data";
 
 		// Solution 1: Copy the "Default" and "Profile X" in User Data to newly folder,
 		// then change the path and you can use these profiles separately with Chrome.
@@ -69,6 +74,9 @@ class TestListener {
 		ChromeDriver driver = new ChromeDriver(options);
 		driver.get("https://google.com");
 		DriverFactory.changeWebDriver(driver)
+			TestListener.browserOpened = true
+		}
+	
 		
 	}
 
@@ -87,10 +95,6 @@ class TestListener {
 	 * @param testSuiteContext: related information of the executed test suite.
 	 */
 	@BeforeTestSuite
-	def maximizeBrowserForTestSuite() {
-		WebUI.openBrowser('')
-		WebUI.maximizeWindow()
-	}
 
 	/**
 	 * Executes after every test suite ends.

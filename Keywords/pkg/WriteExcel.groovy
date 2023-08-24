@@ -89,33 +89,64 @@ public class WriteExcel {
 		workbook.write(fos);
 		fos.close();
 	}
-	
+
 	@Keyword
 	public void writeSummaryToExcel(Map<String, Double> variableMap) {
 		Workbook workbook = new XSSFWorkbook()
 		Sheet sheet = workbook.createSheet("Summary")
-	
+
 		// Create a header row
 		Row headerRow = sheet.createRow(0)
 		headerRow.createCell(0).setCellValue("Variable")
 		headerRow.createCell(1).setCellValue("Value")
-	
+
 		int rowIndex = 1
 		variableMap.each { variableName, value ->
 			Row dataRow = sheet.createRow(rowIndex++)
 			dataRow.createCell(0).setCellValue(variableName)
 			dataRow.createCell(1).setCellValue(value)
 		}
-	
+
 		// Save the workbook to a file
-		def excelFilePath = "TestData/finances_summary_report.xlsx"
+		def excelFilePath = "TestData/Report/finances_summary_report.xlsx"
 		FileOutputStream fileOut = new FileOutputStream(excelFilePath)
 		workbook.write(fileOut)
 		fileOut.close()
 		workbook.close()
-	
+
 		println "Values written to Excel file: $excelFilePath"
 	}
+
+
+	@Keyword
+	public void writeDashboardMetricToExcel(Map<String, String> variableMap) {
+		Workbook workbook = new XSSFWorkbook()
+		Sheet sheet = workbook.createSheet("Summary")
+
+		// Create a header row
+		Row headerRow = sheet.createRow(0)
+		headerRow.createCell(0).setCellValue("MetricName")
+		headerRow.createCell(1).setCellValue("Value")
+		headerRow.createCell(2).setCellValue("QC_Check")
+
+		int rowIndex = 1
+		variableMap.each { variableName, value->
+			Row dataRow = sheet.createRow(rowIndex++)
+			dataRow.createCell(0).setCellValue(variableName)
+			dataRow.createCell(1).setCellValue(value)
+			// Get the corresponding value from doubleCheckValue map
+		}
+
+		// Save the workbook to a file
+		def excelFilePath = "TestData/Report/dashboard_metric_report.xlsx"
+		FileOutputStream fileOut = new FileOutputStream(excelFilePath)
+		workbook.write(fileOut)
+		fileOut.close()
+		workbook.close()
+
+		println "Values written to Excel file: $excelFilePath"
+	}
+
 }
 
 
