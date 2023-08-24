@@ -11,6 +11,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'phatnt-newstore-01'</initValue>
+      <name>store_domain</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'enterprise'</initValue>
       <name>pricingPlan</name>
    </GlobalVariableEntity>
@@ -28,11 +33,6 @@
       <description></description>
       <initValue>'4aUHZLRHJF4='</initValue>
       <name>default_password</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'phatnt-newstore-01'</initValue>
-      <name>store_domain</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

@@ -27,9 +27,7 @@ import org.openqa.selenium.WebElement
 
 def storeDomain = GlobalVariable.store_domain
 
-//def storeDomain = 'phatnt-newstore-1'
-//Go to the store's Shopify Admin
-def storeAdmin = (GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name
+def storeAdmin = GlobalVariable.protocal + storeDomain + GlobalVariable.SPF_admin_domain_name
 
 def isOrderCustomer = GlobalVariable.isOrderCustomer
 
@@ -77,6 +75,7 @@ WebUI.waitForElementVisible(span_create_order, 1)
 
 WebUI.click(span_create_order)
 
+// Start to browse and select products to buy
 WebUI.waitForElementVisible(span_browser, 1)
 
 WebUI.click(span_browser)
@@ -109,7 +108,6 @@ WebUI.delay(3)
 
 WebUI.sendKeys(input_quantity, Keys.chord(Keys.CONTROL, "a", Keys.BACK_SPACE,) + "2")
 
-
 //// Find all input fields matching the xpath and sendKeys to them
 //def driver = DriverFactory.getWebDriver()
 //List<WebElement> textfields = driver.findElements(By.xpath("//*[@class='Polaris-TextField__Input_30ock'][@min]"));
@@ -132,6 +130,7 @@ if(isOrderCustomer) {
 	
 }
 
+// Start to make a payment
 WebUI.scrollToElement(btn_collect_payment, 2)
 
 WebUI.click(btn_collect_payment)

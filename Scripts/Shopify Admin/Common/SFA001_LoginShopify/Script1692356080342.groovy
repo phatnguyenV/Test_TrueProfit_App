@@ -29,17 +29,6 @@ import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Cookie as Cookie
 
-//// Initialize Chrome Driver
-//System.setProperty('webdriver.chrome.driver', DriverFactory.getChromeDriverPath())
-//// Initialize Chrome Option to customize the Chrome Driver
-//ChromeOptions options = new ChromeOptions()
-//
-//options.addArguments('start-maximized')
-//
-//WebDriver driver = new ChromeDriver(options)
-////Update the Web Driver with customized options
-//DriverFactory.changeWebDriver(driver)
-
 def partner_nonprod = GlobalVariable.partner_nonprod
 def username = GlobalVariable.username
 def password = GlobalVariable.password

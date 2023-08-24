@@ -30,15 +30,14 @@ import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Cookie as Cookie
 
-//// https://shtp-XXXX.trueprofit-web.pages.dev
-//def urlTrueProfit = GlobalVariable.protocal + GlobalVariable.test_subdomain + GlobalVariable.domain_name
 def urlTrueProfit = GlobalVariable.urlTrueProfit
 
 WebUI.navigateToUrl(urlTrueProfit)
 
 // If already logged in to TrueProfit, it will be logged out
 if (WebUI.verifyElementPresent(GlobalVariable.main_trueprofit, 1, FailureHandling.OPTIONAL)) {
-    WebUI.click(gear_option)
+   
+	WebUI.click(gear_option)
 
     WebUI.waitForElementVisible(btn_logout_trueprofit, 3)
 
@@ -47,6 +46,10 @@ if (WebUI.verifyElementPresent(GlobalVariable.main_trueprofit, 1, FailureHandlin
     WebUI.waitForElementVisible(btn_ok_logout, 3)
 
     WebUI.click(btn_ok_logout)
+	
+	WebUI.delay(3)
 
     WebUI.waitForElementVisible(btn_signin, 5)
+}else {
+	WebUI.comment("You're logged out already")
 }

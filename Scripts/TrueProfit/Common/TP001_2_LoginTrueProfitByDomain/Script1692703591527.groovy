@@ -30,29 +30,16 @@ import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Cookie as Cookie
 
-//// https://shtp-XXXX.trueprofit-web.pages.dev
-//def urlTrueProfit = GlobalVariable.protocal + GlobalVariable.test_subdomain + GlobalVariable.domain_name
 def urlTrueProfit = GlobalVariable.urlTrueProfit
 
 def storeDomain = GlobalVariable.store_domain
-//def storeDomain = "phatnt-newstore-1"
 
-// Check if the browser is already open with the target URL
-//boolean isBrowserOpened = WebUI.verifyElementPresent(menubar, 1, FailureHandling.OPTIONAL) || 
-//WebUI.verifyElementPresent(btn_sign_in, 1, FailureHandling.OPTIONAL)
-//
-// If the browser is not already opened with the target URL, execute the code
-//if (!isBrowserOpened) {
-//	WebUI.executeJavaScript('window.open();', [])
-//	currentWindow = WebUI.getWindowIndex()
-//	WebUI.switchToWindowIndex(currentWindow + 1)
-//	WebUI.navigateToUrl(urlTrueProfit)
-//}
 WebUI.navigateToUrl(urlTrueProfit)
 
 // Check if the app required login, execute this one
 if (WebUI.verifyElementPresent(input_email, 3, FailureHandling.OPTIONAL)) {
-    WebUI.click(btn_sign_in_with_shopify)
+    
+	WebUI.click(btn_sign_in_with_shopify)
 
     WebUI.waitForElementPresent(input_shopify_domain, 3)
 

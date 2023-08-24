@@ -27,13 +27,10 @@ import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import org.openqa.selenium.Capabilities as Capabilities
 import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
 
-// https://shtp-XXXX.trueprofit-web.pages.dev
-//def urlTrueProfit = GlobalVariable.protocal + GlobalVariable.test_subdomain + GlobalVariable.domain_name
 
 def urlTrueProfit = GlobalVariable.urlTrueProfit
 
 def storeDomain = GlobalVariable.store_domain
-//def storeDomain = 'phatnt-newstore-1'
 
 WebUI.navigateToUrl(urlTrueProfit)
 
@@ -136,7 +133,7 @@ if (WebUI.verifyElementPresent(btn_install, 1, FailureHandling.OPTIONAL) || WebU
 	WebUI.comment(('Store ' + storeDomain) + ' is already installed to TrueProfit')
 }
 
-// Stop test case if not found shop
+// Stop test case if the shop is not found 
 if (WebUI.verifyElementPresent(shop_not_found, 1, FailureHandling.STOP_ON_FAILURE)) {
 	println('Store ' + storeDomain +  'is currently unavailable.')
 }

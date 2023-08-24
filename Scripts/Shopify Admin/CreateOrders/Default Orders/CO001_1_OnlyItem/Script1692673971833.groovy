@@ -23,7 +23,6 @@ import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 
 def storeDomain = GlobalVariable.store_domain
 
-//def storeDomain = 'phatnt-newstore-1'
 //Go to the store's Shopify Admin
 def storeAdmin = (GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name
 
@@ -76,6 +75,8 @@ WebUI.waitForElementVisible(span_create_order, 1)
 
 WebUI.click(span_create_order)
 
+
+// Start to browse and select products to buy
 WebUI.waitForElementVisible(span_browser, 1)
 
 WebUI.click(span_browser)
@@ -103,6 +104,7 @@ if (isOrderCustomer) {
     WebUI.delay(2)
 }
 
+//Start to make a payment
 WebUI.click(btn_collect_payment)
 
 WebUI.waitForElementVisible(mark_as_paid, 3)

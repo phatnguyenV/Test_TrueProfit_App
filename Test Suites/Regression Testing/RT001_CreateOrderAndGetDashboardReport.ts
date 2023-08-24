@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS_GetShopifyAndDashboardReport</name>
+   <name>RT001_CreateOrderAndGetDashboardReport</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -311,7 +311,7 @@
       <guid>846463ad-9e71-4a0d-a3b9-b9a8bab81373</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TrueProfit/Common/TP003_Dashboard</testCaseId>
+      <testCaseId>Test Cases/TrueProfit/Common/TP004_Dashboard</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

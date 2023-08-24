@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TP002_CompleteOnboarding</name>
+   <name>TP003_CompleteOnboarding</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>9e18d658-c8ed-4d20-ba58-947c14e2df63</testCaseGuid>

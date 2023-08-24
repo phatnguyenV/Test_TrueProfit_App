@@ -18,7 +18,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 def storeDomain = GlobalVariable.store_domain
-//def storeDomain = 'phatnt-newstore-1'
 
 //Go to the store's Shopify Admin
 def storeAdmin = GlobalVariable.protocal + storeDomain + GlobalVariable.SPF_admin_domain_name
@@ -49,6 +48,7 @@ if (WebUI.waitForElementPresent(GlobalVariable.a_select_1st_account, 1, FailureH
     WebUI.click(GlobalVariable.a_select_1st_account)
 }
 
+// Go to Settings
 WebUI.waitForElementPresent(span_settings, 3)
 
 WebUI.click(span_settings)
@@ -57,6 +57,8 @@ WebUI.waitForElementPresent(span_apps_and_sales, 3)
 
 WebUI.click(span_apps_and_sales)
 
+
+// Execute the code if the desired app to uninstall is found.
 if (WebUI.verifyElementPresent(GlobalVariable.btn_option_tp, 1, FailureHandling.OPTIONAL)) {
 
     WebUI.click(GlobalVariable.btn_option_tp)
@@ -71,5 +73,5 @@ if (WebUI.verifyElementPresent(GlobalVariable.btn_option_tp, 1, FailureHandling.
 
     WebUI.waitForElementPresent(uninstalled_successfully, 3)
 } else {
-    println('Shop is already uninstalled or not installed yet')
+    println('The shop may be not uninstalled or unavailable.')
 }

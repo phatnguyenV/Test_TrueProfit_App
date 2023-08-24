@@ -26,10 +26,9 @@ import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.WebElement
 
 def storeDomain = GlobalVariable.store_domain
-//def storeDomain = 'phatnt-newstore-1'
 
 //Go to the store's Shopify Admin
-def storeAdmin = (GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name
+def storeAdmin = GlobalVariable.protocal + storeDomain + GlobalVariable.SPF_admin_domain_name
 
 def isOrderCustomer = GlobalVariable.isOrderCustomer
 
@@ -114,7 +113,7 @@ WebUI.click(btn_add)
 
 WebUI.delay(3)
 
-WebUI.sendKeys(input_quantity, Keys.chord(Keys.CONTROL, "a", Keys.BACK_SPACE) + "2")
+//WebUI.sendKeys(input_quantity, Keys.chord(Keys.CONTROL, "a", Keys.BACK_SPACE) + "2")
 
 // Find all input fields matching the xpath and sendKeys to them
 def driver = DriverFactory.getWebDriver()

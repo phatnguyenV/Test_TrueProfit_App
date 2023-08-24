@@ -41,7 +41,6 @@ if (WebUI.verifyElementPresent(input_email, 1, FailureHandling.OPTIONAL)) {
 
 WebUI.waitForElementVisible(GlobalVariable.main_trueprofit, 15)
 
-
 // Go to the customized dashboard and re-select options
 WebUI.waitForElementClickable(i_customized_dashboard, 5)
 
@@ -65,6 +64,7 @@ for (def section : sections) {
 
     println(mixedChecked)
 
+	// Clear all options that are selected
     if (WebUI.verifyElementPresent(allChecked, 1, FailureHandling.OPTIONAL)) {
         WebUI.click(allChecked)
     } else if (WebUI.verifyElementPresent(mixedChecked, 1, FailureHandling.OPTIONAL)) {
@@ -74,15 +74,16 @@ for (def section : sections) {
     }
 }
 
+// List of labels to click for selecting customized options
 def labelsToClick = [lablel_total_order, lablel_gross_sale, lablel_discount, lablel_refund
 	, label_shipping_charged, label_taxes_collected, label_gift_card_sales, label_tips
 	, label_cogs, label_taxes_paid, label_handling_fee, label_shipping_cost, label_ad_spend
 	, label_custom_cost, label_transaction_fees, label_revenue, label_total_cost
 	, label_gross_profit, label_gross_margin, label_net_profit, label_net_margin, btn_done]
 
+// Click the specified labels to select customized options 
 for (def label : labelsToClick) {
     WebUI.click(label)
-	
 }
 
 WebUI.delay(5)
@@ -128,9 +129,11 @@ metricValue.each({ def variableName, def element ->
 			shopifyRefund = variableMap['shopify_refund']
 			taxesCollected = variableMap['taxes_collected']
 			shippingCharged = variableMap['shipping_charged']
-			
 			doubleCheckRevenue = grossSale - Math.abs(discount) - Math.abs(shopifyRefund) + taxesCollected + shippingCharged
+			// Round the total cost to 2 decimal place
 			roundedRevenue = Math.round(doubleCheckRevenue * 100.0) / 100.0;
+			// Format the value to a fixed decimal notation with 2 decimal places
+			// This avoids "E" notation for large values
 			formattedRevenue = String.format("%.2f", roundedRevenue)
 			variableMap[variableName] =  formattedRevenue
 //			println "gross_sale: " + grossSale
@@ -151,18 +154,22 @@ metricValue.each({ def variableName, def element ->
 			taxesPaid = variableMap['taxes_paid']
 			doubleCheckTotalCost = (Math.abs(cogs) + Math.abs(handlingFee) + Math.abs(shippingCost) + Math.abs(totalAdSpend)
                      			 + Math.abs(transactionFee) + Math.abs(customCost) + Math.abs(taxesPaid)) * -1
+			// Round the total cost to 2 decimal place
 			roundedTotalCost = new BigDecimal(doubleCheckTotalCost).setScale(2, BigDecimal.ROUND_HALF_UP)
+			// Convert the value to double type
 			roundedTotalCost = roundedTotalCost.doubleValue()
+			// Format the value to a fixed decimal notation with 2 decimal places
+			// This avoids "E" notation for large values
 			formattedTotalCost = String.format("%.2f", roundedTotalCost)
 			variableMap[variableName] = formattedTotalCost
-			println "cogs: " + cogs
-			println "handlingFee: " + handlingFee
-			println "shippingCost: " + shippingCost
-			println "totalAdSpend: " + totalAdSpend
-			println "transactionFee: " + transactionFee
-			println "customCost: " + customCost
-			println "taxesPaid: " + taxesPaid
-			println "Total Cost: " + formattedTotalCost
+//			println "cogs: " + cogs
+//			println "handlingFee: " + handlingFee
+//			println "shippingCost: " + shippingCost
+//			println "totalAdSpend: " + totalAdSpend
+//			println "transactionFee: " + transactionFee
+//			println "customCost: " + customCost
+//			println "taxesPaid: " + taxesPaid
+//			println "Total Cost: " + formattedTotalCost
 		}
 		else if (variableName == 'gross_profit') {
 			tip = variableMap['tip']
@@ -173,6 +180,7 @@ metricValue.each({ def variableName, def element ->
 			roundedGrossProfit = roundedGrossProfit.doubleValue()
 			formattedGrossProfit = String.format("%.2f", roundedGrossProfit)
 			variableMap[variableName] =  formattedGrossProfit
+			
 			println "Gross Profit: " + formattedGrossProfit
 		}
 		else if (variableName == 'gross_margin') {

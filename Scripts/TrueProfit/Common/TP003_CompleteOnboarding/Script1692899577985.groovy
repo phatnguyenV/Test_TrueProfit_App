@@ -21,8 +21,6 @@ def urlTrueProfit = GlobalVariable.urlTrueProfit
 
 def shopDomain = GlobalVariable.store_domain
 
-//def urlTrueProfit = GlobalVariable.protocal + GlobalVariable.test_subdomain + GlobalVariable.domain_name
-//def shopDomain = 'new-new-new-store-0'
 WebUI.navigateToUrl(urlTrueProfit)
 
 // Call the login test case if required by the app
@@ -47,6 +45,8 @@ if (WebUI.verifyElementPresent(div_left_nav_menu, 1, FailureHandling.OPTIONAL)) 
         WebUI.click(btn_start_importing)
     }
 }
+
+WebUI.delay(3)
 
 // Check whether the store has completed the onboarding steps or not
 if (WebUI.verifyElementPresent(section_pricing, 1, FailureHandling.OPTIONAL)) {
@@ -80,7 +80,7 @@ if (WebUI.verifyElementPresent(section_pricing, 1, FailureHandling.OPTIONAL)) {
 
             break
         default:
-            WebUI.comment('This store has completed the onboarding steps')}
+            WebUI.click(btn_enterprise_plan)}
     
     WebUI.waitForElementPresent(btn_approve_charge, 10)
 
@@ -91,11 +91,13 @@ if (WebUI.verifyElementPresent(section_pricing, 1, FailureHandling.OPTIONAL)) {
     WebUI.navigateToUrl(urlTrueProfit)
 
     WebUI.waitForElementPresent(GlobalVariable.main_trueprofit, 15)
-	
-	WebUI.click(div_billing_details)
+} else {
+    WebUI.comment('This store has completed the onboarding steps')
 }
 
 // Skip linking to account
 if (WebUI.verifyElementPresent(p_no_thanks, 1, FailureHandling.OPTIONAL)) {
     WebUI.click(p_no_thanks)
 }
+
+WebUI.click(div_billing_details)

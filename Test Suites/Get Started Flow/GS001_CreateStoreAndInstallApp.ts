@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS001_LoginAndCreateStore</name>
+   <name>GS001_CreateStoreAndInstallApp</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -11,61 +11,6 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>f904518a-b55c-4b33-a4f0-89dd5bb15bd6</testSuiteGuid>
-   <testCaseLink>
-      <guid>90adee66-1d3a-443d-8a56-340403608eb8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Shopify Admin/Common/SFA001_LoginShopify</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>165217ca-b865-4030-a94e-88b198295cd0</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>fac9552f-7855-4c2e-a18c-14f9864af216</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>27678b1a-36e7-447b-8fdd-141642a991b2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5b65b437-fee3-43f3-92de-850bae1f9ee6</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>30b1ddcf-bd91-4abb-84fe-fbf24aab9989</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>888efe1f-ba54-4acb-a04d-f04c8b38fc67</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ae415e5c-40bd-4353-93e6-66179eb909ed</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5822e614-6d5b-4c62-b971-547d6a0ea72e</variableId>
-      </variableLink>
-   </testCaseLink>
    <testCaseLink>
       <guid>e4c3b77e-cdc2-4954-92d1-c352bf28b4f1</guid>
       <isReuseDriver>false</isReuseDriver>

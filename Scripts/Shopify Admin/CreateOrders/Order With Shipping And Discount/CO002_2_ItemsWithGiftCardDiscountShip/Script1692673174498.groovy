@@ -27,7 +27,6 @@ import org.openqa.selenium.WebElement
 
 def storeDomain = GlobalVariable.store_domain
 
-//def storeDomain = 'phatnt-newstore-1'
 //Go to the store's Shopify Admin
 def storeAdmin = (GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name
 
@@ -77,9 +76,9 @@ WebUI.waitForElementVisible(span_create_order, 2)
 
 WebUI.click(span_create_order)
 
+// Start to browse and select products to buy
 WebUI.waitForElementVisible(span_browser, 2)
 
-// Start to browse and select products to buy
 WebUI.click(span_browser)
 
 WebUI.waitForElementVisible(input_search_products, 2)

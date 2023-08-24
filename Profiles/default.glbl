@@ -11,12 +11,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'ultimate-neww'</initValue>
+      <initValue>'new-new-new-store-0'</initValue>
       <name>store_domain</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'enterprise'</initValue>
+      <initValue>'advanced'</initValue>
       <name>pricingPlan</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

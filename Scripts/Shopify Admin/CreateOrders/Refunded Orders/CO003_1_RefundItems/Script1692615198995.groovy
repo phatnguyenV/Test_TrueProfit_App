@@ -26,11 +26,9 @@ import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.WebElement
 
 def storeDomain = GlobalVariable.store_domain
-//def storeDomain = 'phatnt-newstore-1'
-
 
 //Go to the store's Shopify Admin
-def storeAdmin = (GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name
+def storeAdmin = GlobalVariable.protocal + storeDomain + GlobalVariable.SPF_admin_domain_name
 
 def isOrderCustomer = GlobalVariable.isOrderCustomer
 
@@ -133,7 +131,7 @@ if(isOrderCustomer) {
 	
 }
 
-// Start to make payment
+// Start to make a payment
 WebUI.scrollToElement(btn_collect_payment, 2)
 
 WebUI.click(btn_collect_payment)

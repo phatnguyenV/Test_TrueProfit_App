@@ -26,7 +26,6 @@ import org.openqa.selenium.WebElement as WebElement
 
 def storeDomain = GlobalVariable.store_domain
 
-//def storeDomain = 'phatnt-newstore-1'
 //Go to the store's Shopify Admin
 def storeAdmin = (GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name
 

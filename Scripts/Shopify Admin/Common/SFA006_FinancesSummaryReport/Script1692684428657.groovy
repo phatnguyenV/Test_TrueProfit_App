@@ -31,7 +31,8 @@ import pkg.ReplaceNumber as ReplaceNumber
 
 def storeDomain = GlobalVariable.store_domain
 
-def storeAdmin = ((GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name) + '/reports/finances'
+def storeAdmin = (GlobalVariable.protocal + storeDomain +
+	 GlobalVariable.SPF_admin_domain_name) + '/reports/finances'
 
 WebUI.navigateToUrl(storeAdmin)
 
@@ -61,6 +62,7 @@ if (WebUI.verifyElementPresent(GlobalVariable.a_select_1st_account, 1, FailureHa
 
 WebUI.waitForElementVisible(div_layout, 10)
 
+// Filter data for today 
 WebUI.waitForElementClickable(btn_summary_date_range, 3)
 
 WebUI.click(btn_summary_date_range)

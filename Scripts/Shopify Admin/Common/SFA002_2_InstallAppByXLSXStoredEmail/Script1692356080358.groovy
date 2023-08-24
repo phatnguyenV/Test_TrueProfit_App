@@ -26,13 +26,9 @@ import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import org.openqa.selenium.Capabilities as Capabilities
 import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
-import test.ReadExcel as ReadExcel
+import pkg.ReadExcel as ReadExcel
 
 def urlTrueProfit = GlobalVariable.urlTrueProfit
-
-//// https://shtp-XXXX.trueprofit-web.pages.dev
-//def urlTrueProfit = GlobalVariable.protocal + GlobalVariable.test_subdomain + GlobalVariable.domain_name
-
 
 // Read data from Excel using the custom keyword
 def storeDomain = ''
