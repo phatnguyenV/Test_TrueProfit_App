@@ -15,19 +15,29 @@
       <name>store_domain</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>basic/advanced/ultimate/enterprise</description>
       <initValue>'enterprise'</initValue>
       <name>pricingPlan</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>monthly/yearly</description>
       <initValue>'monthly'</initValue>
       <name>billingPlan</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>today/yesterday/last7days/last30days/thismonth/thisyear/lastmonth/lastyear</description>
+      <initValue>'today'</initValue>
+      <name>date_range_select</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>True: Add the customer info when placing an order</description>
       <initValue>false</initValue>
       <name>isOrderCustomer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('email_1') : 'demo_pa2@gmail.com', ('email_2') : 'phatnt@firegroup.io', ('email_3') : 'triettm@firegroup.io']</initValue>
+      <name>account</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

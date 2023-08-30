@@ -11,23 +11,33 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'new-new-new-store-0'</initValue>
+      <initValue>'qc_newstore_2'</initValue>
       <name>store_domain</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'advanced'</initValue>
+      <description>basic/advanced/ultimate/enterprise</description>
+      <initValue>'enterprise'</initValue>
       <name>pricingPlan</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'monthly'</initValue>
+      <description>monthly/yearly</description>
+      <initValue>'yearly'</initValue>
       <name>billingPlan</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>today/yesterday/last7days/last30days/thismonth/thisyear/lastmonth/lastyear</description>
+      <initValue>'today'</initValue>
+      <name>date_range_select</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>True: Add the customer info when placing an order</description>
       <initValue>true</initValue>
       <name>isOrderCustomer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('email_1') : 'demo_pa2@gmail.com', ('email_2') : 'phatnt@firegroup.io', ('email_3') : 'triettm@firegroup.io']</initValue>
+      <name>account</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

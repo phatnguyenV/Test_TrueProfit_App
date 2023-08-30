@@ -32,7 +32,7 @@ import org.openqa.selenium.Cookie as Cookie
 
 def urlTrueProfit = GlobalVariable.urlTrueProfit
 
-def storeDomain = GlobalVariable.store_domain
+def storeDomain = GlobalVariable.store_domain.toString().replaceAll('-', '_')
 
 WebUI.navigateToUrl(urlTrueProfit)
 
@@ -45,7 +45,7 @@ if (WebUI.verifyElementPresent(input_email, 3, FailureHandling.OPTIONAL)) {
 
     WebUI.sendKeys(input_shopify_domain, Keys.chord(Keys.CONTROL, 'a', Keys.BACK_SPACE) + storeDomain)
 
-    WebUI.click(btn_sign_in)
+    WebUI.click(btn_signin)
 }
 
 // Login to Shopify admin if it is required
@@ -66,7 +66,7 @@ while (WebUI.verifyElementPresent(GlobalVariable.txt_email, 1, FailureHandling.O
 
         WebUI.sendKeys(input_shopify_domain, Keys.chord(Keys.CONTROL, 'a', Keys.BACK_SPACE) + storeDomain)
 
-        WebUI.click(btn_sign_in)
+        WebUI.click(btn_signin)
 
         break
     }

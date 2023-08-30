@@ -21,7 +21,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 
-def storeDomain = GlobalVariable.store_domain
+def storeDomain = GlobalVariable.store_domain.toString().replaceAll('_', '-')
 
 //Go to the store's Shopify Admin
 def storeAdmin = (GlobalVariable.protocal + storeDomain) + GlobalVariable.SPF_admin_domain_name

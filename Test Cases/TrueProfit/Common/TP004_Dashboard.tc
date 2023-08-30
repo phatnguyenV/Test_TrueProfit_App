@@ -231,6 +231,24 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
+      <variableId>b7f799fa-915e-4af2-bbab-e7b210e18b4c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>05071c7b-0122-4f40-a56f-f87e3db667fe</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>74e20b9c-de7f-4aa6-874d-5586bfa5fa58</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
       <variableId>b79d3a5b-1f0a-4331-81d0-52f49589a76a</variableId>
    </variableLinks>
    <variableLinks>
@@ -358,6 +376,150 @@
       <type>DEFAULT</type>
       <value></value>
       <variableId>da299fa1-aa94-4e59-afe6-a96646075c4d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>eec29bf0-a8f4-438b-9891-3a8d2c1883d7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9e2e1cf9-5c54-4bd5-841c-f5098a6d4bae</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>25906cb6-716e-443f-833b-eb811f9abe35</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a082402c-b0a5-4329-8799-a5e7e1674eb6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>83e0b206-9c31-4737-b424-12df0ef0a9f8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c764fe35-30fc-42e4-a6d3-bc1530c9b281</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>57db588c-2bed-4c9a-96fa-69f15e09f52c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>230d9d2a-bdb9-475e-81c7-e15e7bc945b3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2dbf4610-ee79-4b69-9859-92f1f2679934</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6747ab40-2cef-46fa-ae29-b0317e8aaa60</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2f58d382-0200-4667-b7a4-be9a0ec42c1e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>250fa2fb-e9fe-4b48-8e68-13fe63e41acf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c34d5680-7a00-42de-9eba-af7f4b034f3f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4cd13ef4-f38f-47db-b7f4-41b55303d075</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>09073e0d-d148-41a9-88d4-1db25988ca17</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e73b80df-e4a7-4a2d-a517-53cfbcdb4652</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7f6eb06d-b209-43c0-a3a0-224ea2cb79d5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9e4953c3-d2e3-4b94-99bb-6f9d11b6189a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>88d67a3e-aa3e-4815-98bd-1757e16987e3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1dd115a8-f773-4a1d-b636-601c883e7102</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>17c23dc2-be02-4fa6-98a3-0f967403d813</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4d805d3d-ec64-4807-9ed1-9b8527ac7448</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a3fa48ff-e269-43c3-b7d0-44029b504c45</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1ebf680e-3967-49ca-9987-9388470d67d6</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('TrueProfit/Common/input_email')</defaultValue>
@@ -619,6 +781,27 @@
       <name>label_net_margin</name>
    </variable>
    <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/CustomizedDashboard/Order Summary/label_avg_order_value_unchecked')</defaultValue>
+      <description></description>
+      <id>b7f799fa-915e-4af2-bbab-e7b210e18b4c</id>
+      <masked>false</masked>
+      <name>label_avg_order_value</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/CustomizedDashboard/Order Summary/label_avg_order_cost_unchecked')</defaultValue>
+      <description></description>
+      <id>05071c7b-0122-4f40-a56f-f87e3db667fe</id>
+      <masked>false</masked>
+      <name>label_avg_order_cost</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/CustomizedDashboard/Order Summary/label_avg_order_profit_unchecked')</defaultValue>
+      <description></description>
+      <id>74e20b9c-de7f-4aa6-874d-5586bfa5fa58</id>
+      <masked>false</masked>
+      <name>label_avg_order_profit</name>
+   </variable>
+   <variable>
       <defaultValue>findTestObject('TrueProfit/Dashboard/CustomizedDashboard/btn_done')</defaultValue>
       <description></description>
       <id>b79d3a5b-1f0a-4331-81d0-52f49589a76a</id>
@@ -661,18 +844,18 @@
       <name>metric_taxes_collected</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/Dashboard/span_shipping_charged')</defaultValue>
-      <description></description>
-      <id>da299fa1-aa94-4e59-afe6-a96646075c4d</id>
-      <masked>false</masked>
-      <name>metric_shipping_charged</name>
-   </variable>
-   <variable>
       <defaultValue>findTestObject('TrueProfit/Dashboard/span_cogs')</defaultValue>
       <description></description>
       <id>da299fa1-aa94-4e59-afe6-a96646075c4d</id>
       <masked>false</masked>
       <name>metric_cogs</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/span_shipping_charged')</defaultValue>
+      <description></description>
+      <id>da299fa1-aa94-4e59-afe6-a96646075c4d</id>
+      <masked>false</masked>
+      <name>metric_shipping_charged</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('TrueProfit/Dashboard/span_taxes_paid')</defaultValue>
@@ -717,18 +900,18 @@
       <name>metric_transaction_fee</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('TrueProfit/Dashboard/span_tips')</defaultValue>
-      <description></description>
-      <id>da299fa1-aa94-4e59-afe6-a96646075c4d</id>
-      <masked>false</masked>
-      <name>metric_tip</name>
-   </variable>
-   <variable>
       <defaultValue>findTestObject('TrueProfit/Dashboard/span_gift_card_sales')</defaultValue>
       <description></description>
       <id>da299fa1-aa94-4e59-afe6-a96646075c4d</id>
       <masked>false</masked>
       <name>metric_gift_card_sale</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/span_tips')</defaultValue>
+      <description></description>
+      <id>da299fa1-aa94-4e59-afe6-a96646075c4d</id>
+      <masked>false</masked>
+      <name>metric_tip</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('TrueProfit/Dashboard/span_revenue')</defaultValue>
@@ -771,5 +954,173 @@
       <id>da299fa1-aa94-4e59-afe6-a96646075c4d</id>
       <masked>false</masked>
       <name>metric_net_margin</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/span_avg_order_value')</defaultValue>
+      <description></description>
+      <id>eec29bf0-a8f4-438b-9891-3a8d2c1883d7</id>
+      <masked>false</masked>
+      <name>metric_avg_order_value</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/span_avg_order_cost')</defaultValue>
+      <description></description>
+      <id>9e2e1cf9-5c54-4bd5-841c-f5098a6d4bae</id>
+      <masked>false</masked>
+      <name>metric_avg_order_cost</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/span_avg_order_profit')</defaultValue>
+      <description></description>
+      <id>25906cb6-716e-443f-833b-eb811f9abe35</id>
+      <masked>false</masked>
+      <name>metric_avg_order_profit</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/overview_metrics')</defaultValue>
+      <description></description>
+      <id>a082402c-b0a5-4329-8799-a5e7e1674eb6</id>
+      <masked>false</masked>
+      <name>overview_metrics</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/div_calendar_picker')</defaultValue>
+      <description></description>
+      <id>83e0b206-9c31-4737-b424-12df0ef0a9f8</id>
+      <masked>false</masked>
+      <name>div_calendar_picker</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/div_date_range')</defaultValue>
+      <description></description>
+      <id>c764fe35-30fc-42e4-a6d3-bc1530c9b281</id>
+      <masked>false</masked>
+      <name>div_date_range</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/span_shop_name')</defaultValue>
+      <description></description>
+      <id>57db588c-2bed-4c9a-96fa-69f15e09f52c</id>
+      <masked>false</masked>
+      <name>span_shop_name</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/div_menubar')</defaultValue>
+      <description></description>
+      <id>230d9d2a-bdb9-475e-81c7-e15e7bc945b3</id>
+      <masked>false</masked>
+      <name>menubar</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_gear_option')</defaultValue>
+      <description></description>
+      <id>2dbf4610-ee79-4b69-9859-92f1f2679934</id>
+      <masked>false</masked>
+      <name>gear_option</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_logout_trueprofit')</defaultValue>
+      <description></description>
+      <id>6747ab40-2cef-46fa-ae29-b0317e8aaa60</id>
+      <masked>false</masked>
+      <name>btn_logout_trueprofit</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_ok_logout')</defaultValue>
+      <description></description>
+      <id>2f58d382-0200-4667-b7a4-be9a0ec42c1e</id>
+      <masked>false</masked>
+      <name>btn_ok_logout</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_signin')</defaultValue>
+      <description></description>
+      <id>250fa2fb-e9fe-4b48-8e68-13fe63e41acf</id>
+      <masked>false</masked>
+      <name>btn_signin</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/btn_sign_in_with_shopify')</defaultValue>
+      <description></description>
+      <id>c34d5680-7a00-42de-9eba-af7f4b034f3f</id>
+      <masked>false</masked>
+      <name>btn_sign_in_with_shopify</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/input_shopify_domain')</defaultValue>
+      <description></description>
+      <id>4cd13ef4-f38f-47db-b7f4-41b55303d075</id>
+      <masked>false</masked>
+      <name>input_shopify_domain</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Common/input_password')</defaultValue>
+      <description></description>
+      <id>09073e0d-d148-41a9-88d4-1db25988ca17</id>
+      <masked>false</masked>
+      <name>input_password</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/dropdown_store_selection')</defaultValue>
+      <description></description>
+      <id>e73b80df-e4a7-4a2d-a517-53cfbcdb4652</id>
+      <masked>false</masked>
+      <name>dropdown_store_selection</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/btn_today')</defaultValue>
+      <description></description>
+      <id>7f6eb06d-b209-43c0-a3a0-224ea2cb79d5</id>
+      <masked>false</masked>
+      <name>btn_today</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/btn_yesterday')</defaultValue>
+      <description></description>
+      <id>9e4953c3-d2e3-4b94-99bb-6f9d11b6189a</id>
+      <masked>false</masked>
+      <name>btn_yesterday</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/btn_last_7_days')</defaultValue>
+      <description></description>
+      <id>88d67a3e-aa3e-4815-98bd-1757e16987e3</id>
+      <masked>false</masked>
+      <name>btn_last_7_days</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/btn_last_30_days')</defaultValue>
+      <description></description>
+      <id>1dd115a8-f773-4a1d-b636-601c883e7102</id>
+      <masked>false</masked>
+      <name>btn_last_30_days</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/btn_this_month')</defaultValue>
+      <description></description>
+      <id>17c23dc2-be02-4fa6-98a3-0f967403d813</id>
+      <masked>false</masked>
+      <name>btn_this_month</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/btn_this_year')</defaultValue>
+      <description></description>
+      <id>4d805d3d-ec64-4807-9ed1-9b8527ac7448</id>
+      <masked>false</masked>
+      <name>btn_this_year</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/btn_last_month')</defaultValue>
+      <description></description>
+      <id>a3fa48ff-e269-43c3-b7d0-44029b504c45</id>
+      <masked>false</masked>
+      <name>btn_last_month</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('TrueProfit/Dashboard/btn_last_year')</defaultValue>
+      <description></description>
+      <id>1ebf680e-3967-49ca-9987-9388470d67d6</id>
+      <masked>false</masked>
+      <name>btn_last_year</name>
    </variable>
 </TestCaseEntity>

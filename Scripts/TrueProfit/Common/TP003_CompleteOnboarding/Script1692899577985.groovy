@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 def urlTrueProfit = GlobalVariable.urlTrueProfit
 
-def shopDomain = GlobalVariable.store_domain
+def shopDomain = GlobalVariable.store_domain.toString().replaceAll('-', '_')
 
 WebUI.navigateToUrl(urlTrueProfit)
 

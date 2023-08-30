@@ -57,12 +57,6 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>dcc8a88b-b934-4940-9fee-4770cc945e27</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>0e5afd2a-3edc-4c96-9a5f-faea244cd23c</variableId>
    </variableLinks>
    <variableLinks>
@@ -129,7 +123,67 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ac3456d1-5b46-443c-a16a-e0256787d83e</variableId>
+      <variableId>59bb3d46-e99b-4961-afed-4cc179cc4280</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2403590f-5f19-45d0-a8fa-0ce73f6c9d8d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dcc8a88b-b934-4940-9fee-4770cc945e27</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4e8cbbb6-b29d-4d19-929c-42319a8517d4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4d01817a-73e6-436f-89bd-f60c7eab42c5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>af6f7b77-7c95-4258-8d0a-393a174351f0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>990e4e4e-11ae-4179-b1cd-8f9a93ef7783</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>543f1d87-a437-44e7-8791-ce4a90fdeaa9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>edcee7fd-dca4-4b58-8235-a520a6c3d98c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>099a41df-5c26-43ac-a611-2ffac6ee9470</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>647d9ce3-ce36-4511-852c-656822775724</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/CreateStore/btn_create_store')</defaultValue>
@@ -186,13 +240,6 @@
       <id>e7a3060d-168f-4893-a726-95d58fb4aac7</id>
       <masked>false</masked>
       <name>div_layout</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Shopify Admin/SummaryReport/li_today_filter')</defaultValue>
-      <description></description>
-      <id>dcc8a88b-b934-4940-9fee-4770cc945e27</id>
-      <masked>false</masked>
-      <name>li_today_filter</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Shopify Admin/Orders/btn_apply')</defaultValue>
@@ -274,8 +321,78 @@
    <variable>
       <defaultValue>findTestObject('Shopify Admin/SummaryReport/td_tips')</defaultValue>
       <description></description>
-      <id>ac3456d1-5b46-443c-a16a-e0256787d83e</id>
+      <id>59bb3d46-e99b-4961-afed-4cc179cc4280</id>
       <masked>false</masked>
       <name>tips</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/Orvers Over Time/btn_oot_date_range')</defaultValue>
+      <description></description>
+      <id>2403590f-5f19-45d0-a8fa-0ce73f6c9d8d</id>
+      <masked>false</masked>
+      <name>btn_oot_date_range</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/SummaryReport/li_today_filter')</defaultValue>
+      <description></description>
+      <id>dcc8a88b-b934-4940-9fee-4770cc945e27</id>
+      <masked>false</masked>
+      <name>li_today_filter</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/SummaryReport/li_yesterday_filter')</defaultValue>
+      <description></description>
+      <id>4e8cbbb6-b29d-4d19-929c-42319a8517d4</id>
+      <masked>false</masked>
+      <name>li_yesterday_filter</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/SummaryReport/li_last_7_days_filter')</defaultValue>
+      <description></description>
+      <id>4d01817a-73e6-436f-89bd-f60c7eab42c5</id>
+      <masked>false</masked>
+      <name>li_last_7_days_filter</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/SummaryReport/li_last_30_days_filter')</defaultValue>
+      <description></description>
+      <id>af6f7b77-7c95-4258-8d0a-393a174351f0</id>
+      <masked>false</masked>
+      <name>li_last_30_days_filter</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/SummaryReport/li_this_month_filter')</defaultValue>
+      <description></description>
+      <id>990e4e4e-11ae-4179-b1cd-8f9a93ef7783</id>
+      <masked>false</masked>
+      <name>li_this_month_filter</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/SummaryReport/li_this_year_filter')</defaultValue>
+      <description></description>
+      <id>543f1d87-a437-44e7-8791-ce4a90fdeaa9</id>
+      <masked>false</masked>
+      <name>li_this_year_filter</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/SummaryReport/li_last_month_filter')</defaultValue>
+      <description></description>
+      <id>edcee7fd-dca4-4b58-8235-a520a6c3d98c</id>
+      <masked>false</masked>
+      <name>li_last_month_filter</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/SummaryReport/li_last_year_filter')</defaultValue>
+      <description></description>
+      <id>099a41df-5c26-43ac-a611-2ffac6ee9470</id>
+      <masked>false</masked>
+      <name>li_last_year_filter</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Shopify Admin/Orvers Over Time/span_total_orders')</defaultValue>
+      <description></description>
+      <id>647d9ce3-ce36-4511-852c-656822775724</id>
+      <masked>false</masked>
+      <name>span_total_orders</name>
    </variable>
 </TestCaseEntity>

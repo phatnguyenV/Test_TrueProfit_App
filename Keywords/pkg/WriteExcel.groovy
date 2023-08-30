@@ -105,6 +105,7 @@ public class WriteExcel {
 			Row dataRow = sheet.createRow(rowIndex++)
 			dataRow.createCell(0).setCellValue(variableName)
 			dataRow.createCell(1).setCellValue(value)
+
 		}
 
 		// Save the workbook to a file
@@ -119,22 +120,27 @@ public class WriteExcel {
 
 
 	@Keyword
-	public void writeDashboardMetricToExcel(Map<String, String> variableMap) {
+	public void writeDashboardMetricToExcel(Map<String, Double> dashboardMap, Map<String, Double> doubleCheckMap) {
 		Workbook workbook = new XSSFWorkbook()
 		Sheet sheet = workbook.createSheet("Summary")
 
 		// Create a header row
 		Row headerRow = sheet.createRow(0)
-		headerRow.createCell(0).setCellValue("MetricName")
-		headerRow.createCell(1).setCellValue("Value")
-		headerRow.createCell(2).setCellValue("QC_Check")
+		headerRow.createCell(0).setCellValue("Metric Name")
+		headerRow.createCell(1).setCellValue("Overview")
+		headerRow.createCell(2).setCellValue("QC Check")
+		headerRow.createCell(3).setCellValue("Is Failed?")
 
 		int rowIndex = 1
-		variableMap.each { variableName, value->
+		doubleCheckMap.each { variableName, value ->
 			Row dataRow = sheet.createRow(rowIndex++)
 			dataRow.createCell(0).setCellValue(variableName)
-			dataRow.createCell(1).setCellValue(value)
-			// Get the corresponding value from doubleCheckValue map
+			Double metricValueForVariable = dashboardMap[variableName]
+			dataRow.createCell(1).setCellValue(metricValueForVariable)
+			dataRow.createCell(2).setCellValue(value)
+			// Compare the values and set "Passed" or "Failed" accordingly
+			String result = (metricValueForVariable == value) ? "" : "Failed"
+			dataRow.createCell(3).setCellValue(result)
 		}
 
 		// Save the workbook to a file
@@ -148,6 +154,3 @@ public class WriteExcel {
 	}
 
 }
-
-
-

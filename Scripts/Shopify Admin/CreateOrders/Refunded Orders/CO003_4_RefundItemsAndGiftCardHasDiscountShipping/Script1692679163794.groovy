@@ -25,7 +25,7 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.WebElement
 
-def storeDomain = GlobalVariable.store_domain
+def storeDomain = GlobalVariable.store_domain.toString().replaceAll('_', '-')
 
 //Go to the store's Shopify Admin
 def storeAdmin = GlobalVariable.protocal + storeDomain + GlobalVariable.SPF_admin_domain_name
@@ -66,7 +66,7 @@ WebUI.waitForElementVisible(span_orders, 3)
 WebUI.click(span_orders)
 
 //Click "Leave page" if already opened the create order page
-if (WebUI.waitForElementVisible(btn_leave_page, 1, FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementPresent(btn_leave_page, 1, FailureHandling.OPTIONAL)) {
 	WebUI.click(btn_leave_page)
 	WebUI.waitForElementVisible(span_orders, 2)
 	WebUI.click(span_orders)
@@ -156,6 +156,10 @@ WebUI.click(btn_apply)
 WebUI.delay(2)
 
 // Start to add shipping charge for the order
+WebUI.waitForElementVisible(span_add_shipping_charge, 3)
+
+WebUI.delay(1)
+
 WebUI.click(span_add_shipping_charge)
 
 WebUI.delay(2)
@@ -181,7 +185,7 @@ WebUI.delay(2)
 // Start to make a payment
 WebUI.scrollToElement(btn_collect_payment, 2)
 
-WebUI.click(btn_collect_payment)
+WebUI.click(btn_collect_payment) 
 
 WebUI.waitForElementVisible(mark_as_paid, 3)
 
@@ -189,7 +193,7 @@ WebUI.delay(1.5)
 
 WebUI.click(mark_as_paid)
 
-WebUI.waitForElementVisible(span_create_order, 1)
+WebUI.waitForElementVisible(span_create_order, 2)
 
 WebUI.delay(1)
 

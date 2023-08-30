@@ -153,7 +153,7 @@ def makePayment() {
 
     Random random = new Random()
 
-    def randomNumber = random.nextInt(999) + 1
+    def randomNumber = random.nextInt(101) + 100
 
     def randomInput = Integer.toString(randomNumber)
 

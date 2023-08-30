@@ -1,3 +1,4 @@
+\
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -25,7 +26,7 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.WebElement
 
-def storeDomain = GlobalVariable.store_domain
+def storeDomain = GlobalVariable.store_domain.toString().replaceAll('_', '-')
 //def storeDomain = 'phatnt-newstore-1'
 
 //Go to the store's Shopify Admin

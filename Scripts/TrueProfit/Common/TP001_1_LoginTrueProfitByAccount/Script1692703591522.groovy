@@ -41,7 +41,7 @@ if (WebUI.verifyElementPresent(input_email, 3, FailureHandling.OPTIONAL)) {
 
         WebUI.setEncryptedText(input_password, GlobalVariable.default_password)
 
-        WebUI.click(btn_sign_in)
+        WebUI.click(btn_signin)
 }
 
 WebUI.waitForElementVisible(GlobalVariable.main_trueprofit, 10)

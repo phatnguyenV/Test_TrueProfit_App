@@ -6,12 +6,11 @@
    <elementGuidId>d6f87dfd-7031-448a-858a-5273507d6e77</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[contains(text(), &quot;Tip&quot;)]/following::td[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//tbody)[2]/tr[3]/td[2]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

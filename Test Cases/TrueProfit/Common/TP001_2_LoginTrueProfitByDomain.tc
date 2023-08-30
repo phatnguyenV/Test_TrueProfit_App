@@ -40,7 +40,7 @@
       <description></description>
       <id>e2770b44-4cae-41fc-b61c-8cdd59b2aa69</id>
       <masked>false</masked>
-      <name>btn_sign_in</name>
+      <name>btn_signin</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('TrueProfit/Common/btn_sign_in_with_shopify')</defaultValue>

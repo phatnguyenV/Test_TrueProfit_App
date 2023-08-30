@@ -47,7 +47,7 @@
       <description></description>
       <id>d13aa440-5496-4ebf-82f6-2eadd5fbb76e</id>
       <masked>false</masked>
-      <name>btn_sign_in</name>
+      <name>btn_signin</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('TrueProfit/Common/input_email')</defaultValue>

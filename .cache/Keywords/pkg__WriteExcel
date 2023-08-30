@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "90540BFA31FB6D657C037DB7F3345C82",
+  "keywordFileContentHash": "E9434E9BA498ADC468257FE497E97A9D",
   "keywordClasses": [
     {
       "name": "pkg.WriteExcel",
@@ -84,7 +84,7 @@
           "name": "writeDashboardMetricToExcel",
           "parameters": [
             {
-              "name": "variableMap",
+              "name": "dashboardMap",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.util.Map",
@@ -103,8 +103,40 @@
                     "errorOnParsing": false
                   },
                   {
+                    "fullClassName": "java.lang.Double",
+                    "unresolvedClassName": "Double",
+                    "isArray": false,
+                    "isGnericsPlaceHolder": false,
+                    "hasImmutableClassName": false,
+                    "genericsTypes": [],
+                    "errorOnParsing": false
+                  }
+                ],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "doubleCheckMap",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.Map",
+                "unresolvedClassName": "Map",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [
+                  {
                     "fullClassName": "java.lang.String",
                     "unresolvedClassName": "String",
+                    "isArray": false,
+                    "isGnericsPlaceHolder": false,
+                    "hasImmutableClassName": false,
+                    "genericsTypes": [],
+                    "errorOnParsing": false
+                  },
+                  {
+                    "fullClassName": "java.lang.Double",
+                    "unresolvedClassName": "Double",
                     "isArray": false,
                     "isGnericsPlaceHolder": false,
                     "hasImmutableClassName": false,
